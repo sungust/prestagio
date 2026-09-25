@@ -3,15 +3,17 @@ import type { NextConfig } from "next";
 /**
  * Deployment stage, fixed at build time so it is identical in static pages and
  * server functions on any host: Vercel (VERCEL_ENV), Netlify (CONTEXT) or
- * Cloudflare Workers Builds (WORKERS_CI, treated as production unless
- * CONTENT_STAGE=preview). An explicit CONTENT_STAGE always wins.
+ * Cloudflare Workers Builds (WORKERS_CI). On Cloudflare only the production
+ * branches build as production; every other branch builds a preview that shows
+ * stories in review and is noindex. An explicit CONTENT_STAGE always wins.
  */
+const PRODUCTION_BRANCHES = ["claude/amazing-darwin-salc5c", "main"];
 const onCloudflare = process.env.WORKERS_CI === "1" || process.env.PRESTAGIO_TARGET === "cloudflare";
+const cloudflareProduction =
+  process.env.WORKERS_CI === "1" && (!process.env.WORKERS_CI_BRANCH || PRODUCTION_BRANCHES.includes(process.env.WORKERS_CI_BRANCH));
 const deployStage =
   process.env.CONTENT_STAGE ||
-  (process.env.VERCEL_ENV === "production" || process.env.CONTEXT === "production" || process.env.WORKERS_CI === "1"
-    ? "production"
-    : "preview");
+  (process.env.VERCEL_ENV === "production" || process.env.CONTEXT === "production" || cloudflareProduction ? "production" : "preview");
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
