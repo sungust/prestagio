@@ -6,7 +6,7 @@ destinations: [riviera, engadin, lisbon]
 tags: [car fragrance, grand touring, atmosphere]
 author: Prestagio Editors
 published: 2026-08-30
-status: review
+status: published
 basis: research
 linkLabel: Scent the second home on the road
 hero:

@@ -6,7 +6,7 @@ destinations: [amalfi]
 tags: [Italy, sea, boats, arrival]
 author: Prestagio Editors
 published: 2026-09-08
-status: review
+status: published
 basis: research
 linkLabel: Discover the Amalfi Coast
 hero:

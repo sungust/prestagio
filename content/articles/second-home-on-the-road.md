@@ -6,7 +6,7 @@ destinations: [engadin, riviera, highlands, capetown, lisbon, como]
 tags: [grand touring, design, road trips, craftsmanship]
 author: Prestagio Editors
 published: 2026-09-10
-status: review
+status: published
 basis: research
 featured: true
 linkLabel: Take the long way

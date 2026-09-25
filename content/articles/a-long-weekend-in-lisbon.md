@@ -6,7 +6,7 @@ destinations: [lisbon]
 tags: [Portugal, long weekend, city, coast]
 author: Prestagio Editors
 published: 2026-08-24
-status: review
+status: published
 basis: research
 linkLabel: Discover Lisbon
 hero:

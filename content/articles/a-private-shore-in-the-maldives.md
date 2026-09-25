@@ -6,7 +6,7 @@ destinations: [maldives]
 tags: [islands, resorts, wellness, once in a lifetime]
 author: Prestagio Editors
 published: 2026-09-12
-status: review
+status: published
 basis: research
 featured: true
 linkLabel: Explore the Maldives

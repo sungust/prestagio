@@ -6,7 +6,7 @@ destinations: [kyoto]
 tags: [Japan, gardens, temples, architecture, once in a lifetime]
 author: Prestagio Editors
 published: 2026-08-28
-status: review
+status: published
 basis: research
 featured: true
 linkLabel: Discover Kyoto

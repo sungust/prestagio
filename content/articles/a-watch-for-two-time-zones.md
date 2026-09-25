@@ -6,7 +6,7 @@ destinations: [capetown, kyoto]
 tags: [GMT, complications, travel watches]
 author: Prestagio Editors
 published: 2026-09-06
-status: review
+status: published
 basis: research
 featured: true
 linkLabel: Understand the GMT

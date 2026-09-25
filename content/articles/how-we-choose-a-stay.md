@@ -6,7 +6,7 @@ destinations: []
 tags: [editorial standards, where to stay, comparison]
 author: Prestagio Editors
 published: 2026-08-20
-status: review
+status: published
 basis: research
 linkLabel: See how we choose
 hero:

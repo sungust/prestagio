@@ -6,7 +6,7 @@ destinations: [como]
 tags: [where to stay, Italy, villas]
 author: Prestagio Editors
 published: 2026-09-16
-status: review
+status: published
 basis: research
 linkLabel: Choose your shore
 hero:

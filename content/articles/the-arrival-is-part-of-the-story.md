@@ -6,7 +6,7 @@ destinations: [venice, maldives, amalfi, paris]
 tags: [transfers, private aviation, chauffeurs, arrival]
 author: Prestagio Editors
 published: 2026-09-14
-status: review
+status: published
 basis: research
 featured: true
 linkLabel: Explore the arrival

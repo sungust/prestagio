@@ -6,7 +6,7 @@ destinations: [como]
 tags: [Art Deco, design history, dress watches]
 author: Prestagio Editors
 published: 2026-09-04
-status: review
+status: published
 basis: research
 linkLabel: Read the story of the Reverso
 hero:

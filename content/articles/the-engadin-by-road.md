@@ -6,7 +6,7 @@ destinations: [engadin]
 tags: [Switzerland, driving, mountains, iconic drives]
 author: Prestagio Editors
 published: 2026-08-26
-status: review
+status: published
 basis: research
 linkLabel: Drive the Engadin
 hero:

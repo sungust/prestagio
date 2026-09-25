@@ -6,7 +6,7 @@ destinations: [como]
 tags: [architecture, gardens, long weekend, Italy]
 author: Prestagio Editors
 published: 2026-09-18
-status: review
+status: published
 basis: research
 featured: true
 linkLabel: Discover Como

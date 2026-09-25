@@ -6,7 +6,7 @@ destinations: [marrakech, paris]
 tags: [home fragrance, materials, atmosphere]
 author: Prestagio Editors
 published: 2026-09-02
-status: review
+status: published
 basis: research
 featured: true
 linkLabel: Discover room scent
