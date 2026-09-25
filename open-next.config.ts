@@ -7,5 +7,8 @@ export default defineCloudflareConfig({
   // prerendered pages are served read-only from Workers static assets.
   // No R2 or KV bucket is needed.
   incrementalCache: staticAssetsIncrementalCache,
-  enableCacheInterception: true,
+  // Cache interception stays off: it answered the router's RSC data requests with
+  // the prerendered HTML, so open pages retried about 30 times a second and
+  // exhausted the Workers daily request quota.
+  enableCacheInterception: false,
 });
