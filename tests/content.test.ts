@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import { contentErrors } from "@/lib/content/validate";
 import { allArticlesUnfiltered } from "@/lib/content/articles";
 import { getAffiliates, isLive } from "@/lib/content/affiliates";
+import { AGODA_CID, AGODA_CITIES, agodaUrl } from "@/lib/agoda";
 import { loadPlannerData } from "@/lib/planner/data";
 
 describe("content integrity", () => {
@@ -25,8 +26,23 @@ describe("content integrity", () => {
 });
 
 describe("affiliate links", () => {
-  it("keeps every link inactive until approved", () => {
-    for (const a of getAffiliates()) expect(isLive(a)).toBe(false);
+  it("puts Prestagio's partner ID on every live link, and keeps unapproved links off", () => {
+    for (const a of getAffiliates()) {
+      if (!a.approved) expect(isLive(a)).toBe(false);
+      else expect(new URL(a.url).searchParams.get("cid")).toBe(AGODA_CID);
+    }
+  });
+
+  it("builds stay searches with the partner ID for every destination", () => {
+    const { destinations } = loadPlannerData();
+    for (const d of destinations) {
+      const city = AGODA_CITIES[d.id];
+      expect(city, d.id).toBeDefined();
+      const u = new URL(agodaUrl({ city: city.id, checkIn: "2026-10-12", checkOut: "2026-10-15", adults: 2 }));
+      expect(u.hostname).toBe("www.agoda.com");
+      expect(u.searchParams.get("cid")).toBe(AGODA_CID);
+      expect(u.searchParams.get("city")).toBe(String(city.id));
+    }
   });
 
   it("only activates approved https links on the programme's domain", () => {

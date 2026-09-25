@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { Media } from "@/components/Media";
 import { ArticleCard } from "@/components/Stories";
 import { AffiliateModule } from "@/components/AffiliateModule";
+import { StayPhoto } from "@/components/StayPhoto";
+import { AgodaSearch } from "@/components/AgodaSearch";
 import { StepNav } from "@/components/planner/Planner";
 import { EscapeActions } from "@/components/planner/EscapeActions";
 import { journeyStyle, travelEffort } from "@/lib/planner/describe";
@@ -131,7 +133,7 @@ export default async function EscapePage({ params, searchParams }: Props) {
           </h2>
           <div className="companions">
             <article className="companion companion--wide" aria-labelledby="stay-title">
-              <Media image={{ scene: d.stay.kind === "resort" ? "atoll" : "interior", tone: "dusk", alt: "" }} decorative seed={`stay-${d.id}`} />
+              <StayPhoto affiliateId={d.stay.affiliateId} stayName={d.stay.name} context="escape" fallback={d.image} />
               <div className="companion__body">
                 <span className="kicker">Stay · {d.stay.kind}</span>
                 <h3 id="stay-title">{d.stay.name}</h3>
@@ -245,6 +247,7 @@ export default async function EscapePage({ params, searchParams }: Props) {
               </div>
             </article>
           </div>
+          <AgodaSearch place={d.id} context="escape" />
         </div>
       </section>
 

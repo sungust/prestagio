@@ -1,85 +1,105 @@
 {
-  "_note": "Paste approved Agoda deep links into url and set approved:true only after the Agoda Partners programme has approved Prestagio and the link. Until then links stay inactive and visitors see the fallbackPath editorial page. Never invent affiliate IDs.",
+  "_note": "Agoda deep links generated with the Agoda Partners text-link tool for site 1953722 (prestagio.com, active). Every url carries cid=1953722. Set approved:false to switch a link off; visitors then see fallbackPath.",
   "affiliates": [
     {
       "id": "agoda-como-villa-deste",
       "label": "Villa d’Este, Cernobbio",
       "program": "agoda",
-      "url": "",
-      "approved": false,
-      "fallbackPath": "/hotels/where-to-stay-on-lake-como"
+      "url": "https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1953722&hid=15302831",
+      "approved": true,
+      "fallbackPath": "/hotels/where-to-stay-on-lake-como",
+      "notes": "Agoda listing: Villa d'Este, Cernobbio, Italy",
+      "image": "https://pix8.agoda.net/property/15302831/0/51e17d268d2c227d4777696e743aa143.jpg?s=1024x"
     },
     {
       "id": "agoda-amalfi-le-sirenuse",
       "label": "Le Sirenuse, Positano",
       "program": "agoda",
-      "url": "",
-      "approved": false,
-      "fallbackPath": "/destinations/amalfi"
+      "url": "https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1953722&hid=7237621",
+      "approved": true,
+      "fallbackPath": "/destinations/amalfi",
+      "notes": "Agoda listing: Le Sirenuse, Positano, Italy",
+      "image": "https://pix8.agoda.net/hotelImages/4873289/0/2f55478c8c58a78f9d3fe1ba162e0b11.jpeg?s=1024x"
     },
     {
       "id": "agoda-maldives-soneva-fushi",
       "label": "Soneva Fushi, Baa Atoll",
       "program": "agoda",
-      "url": "",
-      "approved": false,
-      "fallbackPath": "/hotels/a-private-shore-in-the-maldives"
+      "url": "https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1953722&hid=12164",
+      "approved": true,
+      "fallbackPath": "/hotels/a-private-shore-in-the-maldives",
+      "notes": "Agoda listing: Soneva Fushi, Maldive Islands, Maldives",
+      "image": "https://pix8.agoda.net/hotelImages/12164/-1/74fa28286e732513983739b21bfb124e.jpg?s=1024x"
     },
     {
       "id": "agoda-paris-ritz",
       "label": "Ritz Paris",
       "program": "agoda",
-      "url": "",
-      "approved": false,
-      "fallbackPath": "/destinations/paris"
+      "url": "https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1953722&hid=9385518",
+      "approved": true,
+      "fallbackPath": "/destinations/paris",
+      "notes": "Agoda listing: Ritz Paris, Paris, France",
+      "image": "https://pix8.agoda.net/hotelImages/5074089/0/a66d38dfb3a8511ec81f1b24bf9aa2f1.jpeg?s=1024x"
     },
     {
       "id": "agoda-kyoto-aman",
       "label": "Aman Kyoto",
       "program": "agoda",
-      "url": "",
-      "approved": false,
-      "fallbackPath": "/destinations/kyoto"
+      "url": "https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1953722&hid=77037514",
+      "approved": true,
+      "fallbackPath": "/destinations/kyoto",
+      "notes": "Agoda listing: Aman Kyoto, Kyoto, Japan",
+      "image": "https://pix8.agoda.net/property/77037514/0/15643dbfd0c01d26eb5ae4aceeada746.jpeg?s=1024x"
     },
     {
       "id": "agoda-lisbon-bairro-alto",
       "label": "Bairro Alto Hotel, Lisbon",
       "program": "agoda",
-      "url": "",
-      "approved": false,
-      "fallbackPath": "/destinations/lisbon"
+      "url": "https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1953722&hid=71374",
+      "approved": true,
+      "fallbackPath": "/destinations/lisbon",
+      "notes": "Agoda listing: Bairro Alto Hotel - The Leading Hotels of the World, Lisbon, Portugal",
+      "image": "https://pix8.agoda.net/hotelImages/71374/0/c57db3b04c339a972d53648230cb23c7.jpeg?s=1024x"
     },
     {
       "id": "agoda-marrakech-mamounia",
       "label": "La Mamounia, Marrakech",
       "program": "agoda",
-      "url": "",
-      "approved": false,
-      "fallbackPath": "/destinations/marrakech"
+      "url": "https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1953722&hid=12364134",
+      "approved": true,
+      "fallbackPath": "/destinations/marrakech",
+      "notes": "Agoda listing: La Mamounia, Marrakech, Morocco",
+      "image": "https://pix8.agoda.net/hotelImages/5081580/0/27c3332d764a524d8229b91ff6003b2d.jpeg?s=1024x"
     },
     {
       "id": "agoda-engadin-badrutts",
       "label": "Badrutt’s Palace Hotel, St. Moritz",
       "program": "agoda",
-      "url": "",
-      "approved": false,
-      "fallbackPath": "/destinations/engadin"
+      "url": "https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1953722&hid=10257199",
+      "approved": true,
+      "fallbackPath": "/destinations/engadin",
+      "notes": "Agoda listing: Badrutt's Palace Hotel, Saint Moritz, Switzerland",
+      "image": "https://pix8.agoda.net/hotelImages/10257199/0/bf16c3ee2c19b0bb14f3e35be344078e.jpeg?s=1024x"
     },
     {
       "id": "agoda-highlands-inverlochy",
       "label": "Inverlochy Castle Hotel, Fort William",
       "program": "agoda",
-      "url": "",
-      "approved": false,
-      "fallbackPath": "/destinations/highlands"
+      "url": "https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1953722&hid=166403",
+      "approved": true,
+      "fallbackPath": "/destinations/highlands",
+      "notes": "Agoda listing: Inverlochy Castle Hotel, Fort William, United Kingdom",
+      "image": "https://pix8.agoda.net/hotelImages/7545679/0/8e7327bcf5735a11ed69a15b494b8cd9.jpeg?s=1024x"
     },
     {
       "id": "agoda-capetown-ellerman",
       "label": "Ellerman House, Cape Town",
       "program": "agoda",
-      "url": "",
-      "approved": false,
-      "fallbackPath": "/destinations/capetown"
+      "url": "https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1953722&hid=189420",
+      "approved": true,
+      "fallbackPath": "/destinations/capetown",
+      "notes": "Agoda listing: Ellerman House, Cape Town, South Africa",
+      "image": "https://pix8.agoda.net/hotelImages/189420/-1/32611ca47656e810f95f6769c2ab3c97.jpg?s=1024x"
     },
     {
       "id": "agoda-venice-aman",
@@ -87,15 +107,18 @@
       "program": "agoda",
       "url": "",
       "approved": false,
-      "fallbackPath": "/destinations/venice"
+      "fallbackPath": "/destinations/venice",
+      "notes": "Aman Venice is not listed on Agoda. The Venice page links to Agoda's Venice city search instead; choose a listed hotel to replace this."
     },
     {
       "id": "agoda-riviera-cap-ferrat",
       "label": "Grand-Hôtel du Cap-Ferrat",
       "program": "agoda",
-      "url": "",
-      "approved": false,
-      "fallbackPath": "/destinations/riviera"
+      "url": "https://www.agoda.com/partners/partnersearch.aspx?pcs=1&cid=1953722&hid=315260",
+      "approved": true,
+      "fallbackPath": "/destinations/riviera",
+      "notes": "Agoda listing: Four Seasons Grand Hotel du Cap-Ferrat, Villefranche-sur-Mer, France",
+      "image": "https://pix8.agoda.net/hotelImages/315260/-1/984e2811fdc6b98fe57e2f978f5cba23.jpg?s=1024x"
     }
   ]
 }

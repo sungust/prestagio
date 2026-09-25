@@ -21,8 +21,8 @@ const nextConfig: NextConfig = {
     // paid Cloudflare Images binding is required.
     unoptimized: onCloudflare,
     formats: ["image/avif", "image/webp"],
-    // Add licensed photo hosts here when real photography is supplied.
-    remotePatterns: [],
+    // Hotel photos from the Agoda Partners image-link tool, always shown linked to Agoda.
+    remotePatterns: [{ protocol: "https", hostname: "pix8.agoda.net" }],
   },
   async redirects() {
     return [

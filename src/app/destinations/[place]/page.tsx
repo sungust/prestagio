@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import { Media } from "@/components/Media";
 import { ArticleCard } from "@/components/Stories";
 import { AffiliateModule } from "@/components/AffiliateModule";
+import { StayPhoto } from "@/components/StayPhoto";
+import { AgodaSearch } from "@/components/AgodaSearch";
 import { JsonLd } from "@/components/JsonLd";
 import { Arrow } from "@/components/Icons";
 import { loadPlannerData } from "@/lib/planner/data";
@@ -76,7 +78,7 @@ export default async function PlacePage({ params }: Props) {
 
       <section className="section section--tight" aria-labelledby="stay-title">
         <div className="wrap companion companion--wide">
-          <Media image={{ scene: d.stay.kind === "resort" ? "atoll" : "interior", tone: d.image.tone, alt: "" }} decorative seed={`stay-${d.id}`} />
+          <StayPhoto affiliateId={d.stay.affiliateId} stayName={d.stay.name} context={`destination:${d.id}`} fallback={d.image} />
           <div className="companion__body">
             <span className="kicker">Where we would stay</span>
             <h2 id="stay-title" style={{ fontSize: 34 }}>
@@ -87,6 +89,9 @@ export default async function PlacePage({ params }: Props) {
             <p className="hint">This recommendation is based on research, not a visit. Confirm current details, rates and seasonal opening with the property.</p>
             <AffiliateModule id={d.stay.affiliateId} stayName={d.stay.name} context={`destination:${d.id}`} />
           </div>
+        </div>
+        <div className="wrap">
+          <AgodaSearch place={d.id} context={`destination:${d.id}`} />
         </div>
       </section>
 

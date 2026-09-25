@@ -1639,7 +1639,10 @@ fieldset {
   .companion--wide {
     grid-template-columns: 1fr;
   }
-  .companion .media {
+  .companion .media,
+  .companion--wide .media {
+    width: 100%;
+    min-height: 0;
     aspect-ratio: 16 / 9;
   }
 }
@@ -2452,4 +2455,93 @@ fieldset {
   .home-sequence {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+}
+
+/* --- Stays on Agoda ---------------------------------------------------------- */
+
+.stay-photo {
+  display: block;
+}
+.stay-photo img {
+  transition: transform 0.8s var(--ease);
+}
+.stay-photo:hover img {
+  transform: scale(1.03);
+}
+.stay-photo__credit {
+  position: absolute;
+  right: 8px;
+  bottom: 6px;
+  z-index: 1;
+  padding: 2px 6px;
+  background: rgba(20, 14, 10, 0.45);
+  color: #fbf6ee;
+  font-size: 10px;
+  letter-spacing: 0.04em;
+}
+
+.stay-search {
+  margin-block: clamp(28px, 4vw, 48px);
+  padding: clamp(20px, 2.6vw, 30px);
+  background: var(--paper);
+  border: 1px solid var(--rule);
+  box-shadow: var(--shadow);
+}
+.stay-search__head {
+  display: flex;
+  align-items: baseline;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+.stay-search__title {
+  font-size: clamp(24px, 2.4vw, 32px);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+.stay-search__fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 12px 14px;
+  align-items: end;
+}
+.stay-search__field label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.stay-search__field select,
+.stay-search__field input {
+  width: 100%;
+  min-width: 0;
+  height: 42px;
+  padding: 0 12px;
+  border: 1px solid #ddd6cb;
+  border-radius: 4px;
+  background: #fffdf9;
+  font-family: var(--serif-text);
+  font-size: 14px;
+  color: var(--ink-2);
+}
+.stay-search__field input[aria-invalid="true"] {
+  border-color: var(--warn);
+}
+.stay-search__submit.btn {
+  grid-column: span 2;
+  min-height: 42px;
+  padding: 11px 22px;
+}
+@media (max-width: 480px) {
+  .stay-search__submit.btn {
+    grid-column: 1 / -1;
+  }
+}
+.stay-search .affiliate__disclosure {
+  margin-top: 14px;
+}
+.stay-search .hint {
+  margin: 10px 0 0;
+  color: var(--warn);
 }

@@ -86,5 +86,7 @@ export interface Affiliate {
   approved: boolean;
   /** Where to send visitors if the link is not active. */
   fallbackPath: string;
+  /** The property's own photo from the Agoda Partners image-link tool; shown only linked to Agoda. */
+  image?: string;
   notes?: string;
 }

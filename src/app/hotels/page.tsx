@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { CategoryPage, placeParam } from "@/components/CategoryPage";
-import { Media } from "@/components/Media";
+import { StayPhoto } from "@/components/StayPhoto";
+import { AgodaSearch } from "@/components/AgodaSearch";
 import { loadPlannerData } from "@/lib/planner/data";
 
 export const metadata: Metadata = {
@@ -24,6 +25,7 @@ export default async function HotelsPage({ searchParams }: Props) {
       discovery={
         <section className="section section--tight" aria-labelledby="where-title">
           <div className="wrap">
+            <AgodaSearch title="Search stays" context="hotels" />
             <h2 id="where-title" style={{ fontSize: 34, marginBottom: 6 }}>
               Where we would stay
             </h2>
@@ -34,7 +36,7 @@ export default async function HotelsPage({ searchParams }: Props) {
             <div className="grid-cards">
               {destinations.map((d) => (
                 <article key={d.id} className="card">
-                  <Media image={{ scene: d.stay.kind === "resort" ? "atoll" : "interior", tone: d.image.tone, alt: "" }} className="card__media" decorative seed={`stay-${d.id}`} />
+                  <StayPhoto affiliateId={d.stay.affiliateId} stayName={d.stay.name} context="hotels" fallback={d.image} className="card__media" sizes="(max-width: 760px) 100vw, 33vw" />
                   <span className="kicker">
                     {d.stay.kind} · {d.name.includes(d.stay.place) ? d.name : `${d.stay.place}, ${d.name}`}
                   </span>
