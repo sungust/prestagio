@@ -13,8 +13,8 @@ export default function CreditsPage() {
   return (
     <ProsePage title="Image credits" lede="Every image on Prestagio, and where it comes from.">
       <p>
-        Until licensed photography is in place, Prestagio uses original illustrations created for the site. They are atmospheric, not literal:
-        they do not depict any specific hotel, car, watch or view.
+        Images marked &ldquo;Image: Prestagio&rdquo; are Prestagio&rsquo;s own design artwork. They are atmospheric, not literal: they do not depict any
+        specific hotel, car, watch or view. Where no photograph is in place yet, Prestagio uses original illustrations created for the site.
       </p>
       <ul>
         {articles.map((a) => (

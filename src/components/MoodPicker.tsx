@@ -2,7 +2,8 @@
 
 import type { Mood, MoodId } from "@/lib/planner/types";
 import { track } from "@/lib/analytics";
-import { Scene } from "./Scene";
+import { Artwork } from "./Media";
+import { moodImage } from "@/lib/photos";
 import { CheckIcon } from "./Icons";
 
 export function MoodPicker({
@@ -38,7 +39,7 @@ export function MoodPicker({
                 }}
               />
               <span className="media">
-                <Scene kind={m.image.scene} tone={m.image.tone} seed={m.id} />
+                <Artwork image={moodImage(m.id, m.image)} seed={m.id} sizes="(max-width: 760px) 50vw, 15vw" />
               </span>
               <span className="mood__check" aria-hidden="true">
                 <CheckIcon />

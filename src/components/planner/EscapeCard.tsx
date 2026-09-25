@@ -4,17 +4,19 @@ import Link from "next/link";
 import type { Escape } from "@/lib/planner/types";
 import { journeyStyle, travelEffort } from "@/lib/planner/describe";
 import { track } from "@/lib/analytics";
-import { Scene } from "@/components/Scene";
+import { Artwork } from "@/components/Media";
+import { resolveImage } from "@/lib/photos";
 import { Arrow } from "@/components/Icons";
 
 export function EscapeCard({ escape: e, index, query }: { escape: Escape; index: number; query: string }) {
   const d = e.destination;
+  const image = resolveImage(d.image);
   const href = `/plan/escape/${d.id}${query ? `?${query}` : ""}`;
   const effort = travelEffort(e);
   return (
     <article className="escape-card" aria-labelledby={`escape-${d.id}`}>
       <div className="escape-card__media media">
-        <Scene kind={d.image.scene} tone={d.image.tone} seed={d.id} title={d.image.alt} />
+        <Artwork image={image} seed={d.id} title={image.alt} sizes="(max-width: 760px) 100vw, 33vw" />
         <div className="escape-card__title">
           <span className="escape-card__n">Escape {String(index + 1).padStart(2, "0")} · {d.country}</span>
           <h3 id={`escape-${d.id}`}>{d.name}</h3>
