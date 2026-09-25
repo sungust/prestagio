@@ -1,11 +1,8 @@
-import fs from "node:fs";
-import path from "node:path";
 import type { Affiliate } from "@/lib/types";
-
-const FILE = path.join(process.cwd(), "content", "affiliates.json");
+import { CONTENT } from "./compiled";
 
 export function getAffiliates(): Affiliate[] {
-  return (JSON.parse(fs.readFileSync(FILE, "utf8")) as { affiliates: Affiliate[] }).affiliates;
+  return CONTENT.affiliates;
 }
 
 export function getAffiliate(id: string): Affiliate | undefined {

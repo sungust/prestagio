@@ -6,13 +6,21 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "tsc --noEmit",
+    "lint": "npm run content:build && tsc --noEmit",
     "test": "vitest run",
     "test:e2e": "playwright test e2e/critical.spec.ts",
     "screenshots": "playwright test e2e/screenshots.spec.ts",
     "content:check": "tsx scripts/check-content.ts",
     "import:studio": "tsx scripts/import-studio.ts",
-    "check": "tsc --noEmit && vitest run && tsx scripts/check-content.ts"
+    "check": "npm run content:build && tsc --noEmit && vitest run && tsx scripts/check-content.ts",
+    "content:build": "tsx scripts/build-content.ts",
+    "predev": "npm run content:build",
+    "prebuild": "npm run content:build",
+    "pretest": "npm run content:build",
+    "cf:build": "PRESTAGIO_TARGET=cloudflare opennextjs-cloudflare build",
+    "cf:preview": "PRESTAGIO_TARGET=cloudflare opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "cf:deploy": "PRESTAGIO_TARGET=cloudflare opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "cf:upload": "PRESTAGIO_TARGET=cloudflare opennextjs-cloudflare build && opennextjs-cloudflare upload"
   },
   "engines": {
     "node": ">=20"
@@ -30,12 +38,14 @@
     "server-only": "^0.0.1"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "^1.20.6",
     "@playwright/test": "1.56",
     "@types/node": "^26.6.2",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "tsx": "^4.23.15",
     "typescript": "^5.9.3",
-    "vitest": "^5.0.1"
+    "vitest": "^5.0.1",
+    "wrangler": "^4.139.0"
   }
 }

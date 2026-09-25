@@ -1,6 +1,23 @@
-# Deployment (Netlify or Vercel) and rollback
+# Deployment (Cloudflare, Netlify or Vercel) and rollback
 
 **Do not change prestagio.com DNS until the preview has been reviewed.**
+
+## Cloudflare Workers (recommended)
+
+The site runs on Cloudflare Workers through the OpenNext adapter (`@opennextjs/cloudflare`). Config: `wrangler.jsonc` (Worker name `prestagio`) and `open-next.config.ts`. Prerendered pages are served read-only from Workers static assets, so **no R2, KV or D1 is needed**. The Worker bundle is about 1.3 MB compressed, which fits the free plan's 3 MB limit. The Workers Free plan allows 100,000 requests a day.
+
+**Git-connected deploys (Workers Builds):**
+1. Cloudflare dashboard → **Workers & Pages → Create → Import a repository** → GitHub → `sungust/prestagio`.
+2. Project/Worker name: `prestagio` (must match `name` in `wrangler.jsonc`). Production branch: `claude/amazing-darwin-salc5c` (or `main` once it exists).
+3. Build command: `npx opennextjs-cloudflare build`. Deploy command: `npx opennextjs-cloudflare deploy`. Non-production branch deploy command: `npx opennextjs-cloudflare upload`. Root directory: `/`.
+4. Build variables: none required. Optional: `NODE_VERSION=22`. Workers Builds sets `WORKERS_CI=1`, which the build treats as **production**: only `published` content, and indexing allowed. Add `CONTENT_STAGE=preview` only for a deliberate preview build.
+5. Runtime secrets (Worker → Settings → Variables and Secrets), all optional: `RESEND_API_KEY`, `EMAIL_FROM`, `CONTACT_TO`, `NEWSLETTER_WEBHOOK_URL`, `GITHUB_OAUTH_CLIENT_ID`, `GITHUB_OAUTH_CLIENT_SECRET`, `ANTHROPIC_API_KEY`, `AI_ENHANCEMENT_ENABLED`. `NEXT_PUBLIC_*` values are build-time: set `NEXT_PUBLIC_ANALYTICS_ENDPOINT` as a *build* variable. `NEXT_PUBLIC_SITE_URL` defaults to `https://prestagio.com`.
+6. Domain: Worker → Settings → **Domains & Routes → Add → Custom domain** → `prestagio.com`, and `www.prestagio.com`. This requires the prestagio.com zone to be on Cloudflare. If DNS is elsewhere, add the site to Cloudflare first (which changes nameservers), or keep DNS where it is and deploy on Netlify or Vercel instead.
+7. Rollback: Worker → **Deployments** → previous version → **Rollback**. Or remove the custom domain and restore the saved DNS records.
+
+**From a terminal** (needs `wrangler login` or a `CLOUDFLARE_API_TOKEN`): `npm run cf:preview` runs the Workers runtime locally, and `npm run cf:deploy` deploys.
+
+Content is compiled into the build (`npm run content:build`, run automatically before `dev`, `build` and `test`), because Workers have no filesystem at request time. Every content change therefore needs a rebuild, which Git-connected deploys do automatically.
 
 ## Netlify
 

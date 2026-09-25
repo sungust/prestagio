@@ -2,17 +2,24 @@ import type { NextConfig } from "next";
 
 /**
  * Deployment stage, fixed at build time so it is identical in static pages and
- * serverless functions on any host: Vercel (VERCEL_ENV) or Netlify (CONTEXT).
- * An explicit CONTENT_STAGE always wins.
+ * server functions on any host: Vercel (VERCEL_ENV), Netlify (CONTEXT) or
+ * Cloudflare Workers Builds (WORKERS_CI, treated as production unless
+ * CONTENT_STAGE=preview). An explicit CONTENT_STAGE always wins.
  */
+const onCloudflare = process.env.WORKERS_CI === "1" || process.env.PRESTAGIO_TARGET === "cloudflare";
 const deployStage =
   process.env.CONTENT_STAGE ||
-  (process.env.VERCEL_ENV === "production" || process.env.CONTEXT === "production" ? "production" : "preview");
+  (process.env.VERCEL_ENV === "production" || process.env.CONTEXT === "production" || process.env.WORKERS_CI === "1"
+    ? "production"
+    : "preview");
 
 const nextConfig: NextConfig = {
   poweredByHeader: false,
   env: { DEPLOY_STAGE: deployStage },
   images: {
+    // Cloudflare: serve licensed photos as uploaded (pre-optimise them), so no
+    // paid Cloudflare Images binding is required.
+    unoptimized: onCloudflare,
     formats: ["image/avif", "image/webp"],
     // Add licensed photo hosts here when real photography is supplied.
     remotePatterns: [],

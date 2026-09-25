@@ -1,7 +1,7 @@
 # Prestagio
 
 Luxury travel and lifestyle publication with the **Design My Escape** Planner.
-Next.js 16 · TypeScript · file-based content · Decap CMS · Vercel.
+Next.js 16 · TypeScript · file-based content (compiled at build) · Decap CMS · Cloudflare Workers (also Netlify / Vercel).
 
 ## Run locally
 
@@ -12,6 +12,7 @@ npm run dev                  # http://localhost:3000
 ```
 
 Production build: `npm run build && npm run start`.
+Cloudflare Workers runtime locally: `npm run cf:preview` (http://localhost:8787).
 
 ## Checks
 
@@ -38,4 +39,4 @@ npm run screenshots  # writes docs/screenshots/*.jpg
 - [docs/AUDIT.md](docs/AUDIT.md): what was found, what was kept, and what to confirm
 - [docs/PLANNER.md](docs/PLANNER.md): recommendation logic and the curated dataset
 - [docs/CONTENT-OPERATIONS.md](docs/CONTENT-OPERATIONS.md): editorial workflow, CMS, studio import, images
-- [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md): Vercel setup, environment variables, go-live and rollback
+- [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md): Cloudflare, Netlify or Vercel setup, environment variables, go-live and rollback
