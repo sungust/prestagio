@@ -1,0 +1,50 @@
+{
+  "id": "capetown",
+  "name": "Cape Town and the Winelands",
+  "country": "South Africa",
+  "region": "Western Cape",
+  "group": "southern-africa",
+  "tagline": "A mountain in the city, two oceans, and vineyards an hour away.",
+  "distinctive": "Few cities combine a mountain, two oceans and a great wine region so closely. Chapman's Peak Drive and the road to Cape Point are among the world's most spectacular coastal routes.",
+  "image": { "scene": "cape", "tone": "golden", "alt": "Illustration of a flat-topped mountain above the ocean with a pale car on a coastal road" },
+  "moods": { "sea": 2, "city": 2, "art": 1, "lifetime": 3, "weekend": 0, "wellness": 1, "drive": 3 },
+  "moodNotes": {
+    "drive": "Chapman's Peak Drive and the Cape Peninsula loop are some of the most beautiful roads anywhere.",
+    "lifetime": "Table Mountain, penguins at Boulders Beach and whales in season, all in one journey.",
+    "sea": "Atlantic beaches on one side and the warmer False Bay on the other.",
+    "city": "A lively dining scene and Zeitz MOCAA on the waterfront.",
+    "weekend": "Long-haul from most departure points. Give it at least a week."
+  },
+  "bestMonths": [10, 11, 12, 1, 2, 3, 4],
+  "busyMonths": [12, 1],
+  "quietMonths": [],
+  "seasonNote": "The southern summer, roughly October to April, is warm and dry. Winter brings rain, and whale season along the coast.",
+  "minNights": 5,
+  "idealNights": [6, 10],
+  "priceLevel": 3,
+  "party": { "solo": 2, "couple": 2, "family": 2, "friends": 2 },
+  "arrival": {
+    "airports": [{ "iata": "CPT", "name": "Cape Town International", "lat": -33.965, "lon": 18.602 }],
+    "transfer": "Allow roughly 20–30 minutes by road to the city centre or the Atlantic seaboard, traffic permitting.",
+    "groundNote": "Traffic drives on the left. Take local advice on where and when to drive, as you would in any large city."
+  },
+  "driving": { "suitable": true, "note": "Traffic drives on the left. Chapman's Peak Drive is a toll road that can close in bad weather, so check its status before setting out. Use a driver on wine-tasting days." },
+  "car": { "couple": "porsche-911-targa", "group": "range-rover" },
+  "carWhy": "An open roof for the Atlantic coast and composure on the mountain passes into the Winelands.",
+  "transfer": { "mode": "chauffeur", "label": "Driver for the Winelands", "why": "Tasting and driving do not mix. Take a driver for the vineyard day." },
+  "stay": { "name": "Ellerman House", "place": "Bantry Bay", "kind": "hotel", "why": "An intimate hotel in a historic house on the Atlantic seaboard, known for its collection of South African art.", "affiliateId": "agoda-capetown-ellerman" },
+  "watch": "gmt-master-ii",
+  "watchWhy": "A long-haul journey calls for a second time zone. The GMT keeps home in view while you adjust to the Cape.",
+  "aroma": "fynbos",
+  "aromaWhy": "Fynbos botanicals such as buchu and rooibos with sea salt: the Cape's own scent, herbal and bright.",
+  "days": [
+    { "title": "Table Mountain", "text": "Take the cableway early while the weather allows, then spend the afternoon at Zeitz MOCAA on the waterfront." },
+    { "title": "Chapman's Peak and the Cape", "text": "Drive Chapman's Peak to Cape Point, returning via the penguins at Boulders Beach." },
+    { "title": "The Winelands", "text": "Take a driver to Franschhoek and Stellenbosch for tastings and a long lunch among the vines." }
+  ],
+  "moreDays": [
+    { "title": "Hermanus", "text": "Between roughly June and November, watch southern right whales from the cliffs." },
+    { "title": "Kirstenbosch", "text": "Spend a morning at the botanical garden on the mountain's eastern slopes." }
+  ],
+  "articles": ["second-home-on-the-road", "a-watch-for-two-time-zones"]
+}

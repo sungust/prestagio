@@ -1,0 +1,51 @@
+{
+  "id": "paris",
+  "name": "Paris",
+  "country": "France",
+  "region": "Île-de-France",
+  "group": "france-city",
+  "tagline": "Collections by day, performances and late tables by night.",
+  "distinctive": "Paris does evenings better than almost anywhere, with an opera house, an unhurried late dinner and the river lit up afterwards. By day it has some of the world's great collections, from Orsay to the Pinault Collection in the Bourse de Commerce.",
+  "image": { "scene": "city-night", "tone": "night", "alt": "Illustration of a city's lit skyline reflected in a river at night" },
+  "moods": { "sea": 0, "city": 3, "art": 3, "lifetime": 2, "weekend": 3, "wellness": 1, "drive": 0 },
+  "moodNotes": {
+    "city": "Paris at night: the Palais Garnier, a late table, a walk along the lit Seine.",
+    "art": "Orsay, the Louvre, the Fondation Louis Vuitton and the Pinault Collection, all within a few days.",
+    "weekend": "Rail and air links from much of Europe make a long weekend easy.",
+    "lifetime": "A first proper visit, done well, marks a life."
+  },
+  "bestMonths": [4, 5, 6, 9, 10, 12],
+  "busyMonths": [],
+  "quietMonths": [],
+  "seasonNote": "Paris works all year. Spring and early autumn have the kindest weather, and some restaurants close for part of August.",
+  "minNights": 2,
+  "idealNights": [3, 4],
+  "priceLevel": 4,
+  "party": { "solo": 2, "couple": 2, "family": 1, "friends": 2 },
+  "arrival": {
+    "airports": [
+      { "iata": "CDG", "name": "Paris Charles de Gaulle", "lat": 49.010, "lon": 2.548 },
+      { "iata": "ORY", "name": "Paris Orly", "lat": 48.723, "lon": 2.379 }
+    ],
+    "transfer": "Allow roughly 45 minutes to over an hour by road from Charles de Gaulle to the centre, depending on traffic. Visitors from London or Brussels can arrive by train at the Gare du Nord.",
+    "groundNote": "Walk and use the Métro during the day, and keep a chauffeured car for evenings and luggage."
+  },
+  "driving": { "suitable": false, "note": "Central Paris is slow to drive and hard to park. A chauffeured car is the elegant alternative." },
+  "car": null,
+  "transfer": { "mode": "chauffeur", "label": "Chauffeured car", "why": "A driver for the airport run and for evenings, so the night ends at the door rather than at a taxi rank." },
+  "stay": { "name": "Ritz Paris", "place": "Place Vendôme", "kind": "hotel", "why": "The storied hotel on Place Vendôme, surrounded by the city's jewellers and watchmakers and within walking distance of the Tuileries and the Palais Garnier.", "affiliateId": "agoda-paris-ritz" },
+  "watch": "tank",
+  "watchWhy": "The Tank was designed in Paris in 1917, and its slim rectangular case sits naturally under a cuff at the opera.",
+  "aroma": "iris-leather",
+  "aromaWhy": "Iris and soft suede give a quiet, polished Parisian note, lovely in a room with the curtains drawn against the evening.",
+  "days": [
+    { "title": "Vendôme to the Opéra", "text": "Walk from Place Vendôme through the Tuileries in the afternoon. In the evening, see a performance at the Palais Garnier, followed by a late dinner." },
+    { "title": "Great collections", "text": "Spend the morning at the Musée d'Orsay, then take a car to Frank Gehry's Fondation Louis Vuitton in the Bois de Boulogne. Dine late on the Left Bank." },
+    { "title": "The Marais", "text": "Walk the Place des Vosges and the Musée Picasso, see the Pinault Collection in the Bourse de Commerce, and finish with a walk along the river at night." }
+  ],
+  "moreDays": [
+    { "title": "Versailles", "text": "Book an early timed entry and take a driver to Versailles. Leave time for the gardens." },
+    { "title": "Montmartre in the morning", "text": "Walk Montmartre before the crowds, then spend a quiet afternoon at the Musée Rodin garden." }
+  ],
+  "articles": ["the-arrival-is-part-of-the-story", "composing-the-scent-of-a-room"]
+}

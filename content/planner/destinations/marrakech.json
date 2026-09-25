@@ -1,0 +1,49 @@
+{
+  "id": "marrakech",
+  "name": "Marrakech",
+  "country": "Morocco",
+  "region": "Marrakech-Safi",
+  "group": "morocco",
+  "tagline": "Gardens, palaces and rooftops, with the Atlas on the horizon.",
+  "distinctive": "The Medina's palaces and madrasas, Jardin Majorelle and the Yves Saint Laurent museum, the ritual of the hammam, and the High Atlas an hour away.",
+  "image": { "scene": "riad", "tone": "golden", "alt": "Illustration of palm trees and a reflecting pool seen through terracotta arches" },
+  "moods": { "sea": 0, "city": 3, "art": 3, "lifetime": 2, "weekend": 2, "wellness": 3, "drive": 1 },
+  "moodNotes": {
+    "city": "Rooftop dinners, lamplit courtyards and the square at Jemaa el-Fnaa after dark.",
+    "art": "The Bahia Palace, the Ben Youssef Madrasa, Jardin Majorelle and the Musée Yves Saint Laurent.",
+    "wellness": "The hammam is a tradition here, and hotel gardens are made for doing nothing.",
+    "weekend": "A short flight from much of Europe, and the airport is close to the city.",
+    "lifetime": "A night in the Agafay desert or high in the Atlas makes the trip."
+  },
+  "bestMonths": [3, 4, 5, 10, 11],
+  "busyMonths": [],
+  "quietMonths": [],
+  "seasonNote": "Spring and autumn are ideal. Summer is very hot, and winter nights are cold.",
+  "minNights": 3,
+  "idealNights": [3, 5],
+  "priceLevel": 3,
+  "party": { "solo": 1, "couple": 2, "family": 1, "friends": 2 },
+  "arrival": {
+    "airports": [{ "iata": "RAK", "name": "Marrakech Menara", "lat": 31.607, "lon": -8.036 }],
+    "transfer": "Menara Airport is close to the city. Transfers to the Medina or Hivernage typically take 15–25 minutes.",
+    "groundNote": "Much of the Medina is closed to cars, so hotels arrange porters from the nearest drop-off point."
+  },
+  "driving": { "suitable": false, "note": "The Medina is largely car-free. For the Atlas and the desert, a private driver who knows the roads is the better choice." },
+  "car": null,
+  "transfer": { "mode": "chauffeur", "label": "Private driver and 4×4", "why": "A driver for the Atlas valleys and the Agafay desert, where local knowledge matters more than horsepower." },
+  "stay": { "name": "La Mamounia", "place": "Beside the Medina walls", "kind": "hotel", "why": "The celebrated palace hotel beside the old city walls, known for its large gardens and its Moorish and Art Deco interiors.", "affiliateId": "agoda-marrakech-mamounia" },
+  "watch": "santos",
+  "watchWhy": "A square-cased classic from 1904, as considered as the zellige in a riad courtyard and at ease in the heat.",
+  "aroma": "rose-cedar",
+  "aromaWhy": "Damask rose and orange blossom from the gardens, and Atlas cedar from the mountains.",
+  "days": [
+    { "title": "Gardens", "text": "Visit Jardin Majorelle and the Musée Yves Saint Laurent in the morning. Book a hammam in the afternoon, then dine on a rooftop at sunset." },
+    { "title": "The Medina", "text": "See the Bahia Palace and the Ben Youssef Madrasa, then explore the souks with a good guide. Have dinner in a riad courtyard." },
+    { "title": "Into the Atlas", "text": "Take a driver into the Ourika valley or up to Imlil for lunch with mountain views, returning for the evening." }
+  ],
+  "moreDays": [
+    { "title": "A desert night", "text": "Spend the night at a camp in the stony Agafay desert, less than an hour from the city." },
+    { "title": "Essaouira", "text": "Take a day or a night on the Atlantic, in a walled port town with a fine light and a breeze." }
+  ],
+  "articles": ["composing-the-scent-of-a-room"]
+}

@@ -1,0 +1,11 @@
+{
+  "moods": [
+    { "id": "sea", "label": "Disappear by the sea", "line": "Salt air, a horizon, and no reason to hurry.", "image": { "scene": "coast", "tone": "dusk", "alt": "Illustration of a coastline at dusk with boats on a calm sea" } },
+    { "id": "city", "label": "A city after dark", "line": "Late dinners, lit facades, a performance, a last drink.", "image": { "scene": "city-night", "tone": "night", "alt": "Illustration of a city skyline reflected in a river at night" } },
+    { "id": "art", "label": "Art and architecture", "line": "Collections, gardens and buildings worth crossing a border for.", "image": { "scene": "architecture", "tone": "day", "alt": "Illustration of a pale rationalist facade with a grid of windows" } },
+    { "id": "lifetime", "label": "Once in a lifetime", "line": "The journey you will still describe in twenty years.", "image": { "scene": "atoll", "tone": "dusk", "alt": "Illustration of overwater villas at sunset" } },
+    { "id": "weekend", "label": "A beautiful long weekend", "line": "Close enough to arrive by lunch, rich enough to feel far away.", "image": { "scene": "lake", "tone": "golden", "alt": "Illustration of a lake between mountains seen from a stone terrace" } },
+    { "id": "wellness", "label": "Slow down and restore", "line": "Space, water, good sleep and nowhere to be.", "image": { "scene": "spa", "tone": "dawn", "alt": "Illustration of an infinity pool above a still sea at dawn" } },
+    { "id": "drive", "label": "An iconic drive", "line": "A great road, the right car, and time to enjoy both.", "image": { "scene": "road", "tone": "golden", "alt": "Illustration of a dark grand tourer on a winding mountain road" } }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "engadin",
+  "name": "St. Moritz and the Engadin",
+  "country": "Switzerland",
+  "region": "Graubünden",
+  "group": "alps",
+  "tagline": "High lakes, clear light and three great mountain passes.",
+  "distinctive": "The Upper Engadin is a high valley of lakes and larch forests, famous for its light. It is reached over some of the Alps' finest mountain roads, or by the Rhaetian Railway, whose Albula and Bernina lines are UNESCO-listed.",
+  "image": { "scene": "alpine", "tone": "dawn", "alt": "Illustration of snow-capped peaks above a valley with a dark car on a winding pass" },
+  "moods": { "sea": 0, "city": 1, "art": 1, "lifetime": 2, "weekend": 2, "wellness": 3, "drive": 3 },
+  "moodNotes": {
+    "drive": "The Julier, Maloja and Bernina passes offer some of Europe's great driving in one valley.",
+    "wellness": "Mountain air, lake walks and long spa afternoons.",
+    "lifetime": "The Bernina line or a winter on the frozen lakes is a once-in-a-lifetime experience.",
+    "weekend": "About three hours by road from Zurich: possible as a long weekend, better with more time."
+  },
+  "bestMonths": [1, 2, 3, 6, 7, 8, 9],
+  "busyMonths": [2],
+  "quietMonths": [4, 5, 11],
+  "seasonNote": "Many hotels close between seasons, roughly April to June and October to November. Some high passes close in winter.",
+  "minNights": 3,
+  "idealNights": [4, 6],
+  "priceLevel": 4,
+  "party": { "solo": 1, "couple": 2, "family": 2, "friends": 2 },
+  "arrival": {
+    "airports": [
+      { "iata": "ZRH", "name": "Zurich", "lat": 47.458, "lon": 8.548 },
+      { "iata": "MXP", "name": "Milan Malpensa", "lat": 45.630, "lon": 8.723 }
+    ],
+    "transfer": "From Zurich, allow roughly three hours by road to St. Moritz. The Rhaetian Railway is a scenic alternative, and Engadin Airport at Samedan serves private aviation.",
+    "groundNote": "In winter, carry snow chains or winter equipment, and check which passes are open before you set out."
+  },
+  "driving": { "suitable": true, "note": "Outstanding in summer and early autumn. In winter, drive only open passes on proper winter tyres and allow for conditions." },
+  "car": { "couple": "bentley-continental-gt", "group": "range-rover" },
+  "carWhy": "All-wheel drive and a calm cabin for long climbs. A grand tourer for two, or a Range Rover when there are more of you and more luggage.",
+  "transfer": { "mode": "rail", "label": "Rhaetian Railway", "why": "If you would rather not drive the passes, the train is one of the most beautiful ways to arrive anywhere." },
+  "stay": { "name": "Badrutt's Palace Hotel", "place": "St. Moritz", "kind": "hotel", "why": "The landmark palace hotel above Lake St. Moritz, a base for winter sport and summer drives alike. It is seasonal, so check opening dates.", "affiliateId": "agoda-engadin-badrutts" },
+  "watch": "royal-oak",
+  "watchWhy": "A Swiss icon in steel, sporty enough for a mountain road and refined enough for dinner at the palace.",
+  "aroma": "pine-woodsmoke",
+  "aromaWhy": "Stone pine, the Engadin's own tree, with a trace of woodsmoke from the evening fire.",
+  "days": [
+    { "title": "Over the Julier", "text": "Drive in over the Julier Pass to arrive in the afternoon light, with a lakeside walk before dinner." },
+    { "title": "The high lakes", "text": "Walk the lakes of Silvaplana and Sils in the morning, visit the Nietzsche-Haus in Sils Maria, then spend a long afternoon at the spa." },
+    { "title": "Over the Bernina", "text": "Drive the Bernina Pass toward Poschiavo for lunch, or take the Bernina line and let someone else do the driving." }
+  ],
+  "moreDays": [
+    { "title": "Val Fex", "text": "Walk or take a horse-drawn carriage into the car-free Val Fex above Sils." },
+    { "title": "Segantini", "text": "Visit the Segantini Museum in St. Moritz for the painter of this light." },
+    { "title": "Maloja to Bregaglia", "text": "Descend the Maloja's hairpins into the Italian-speaking Val Bregaglia." }
+  ],
+  "articles": ["the-engadin-by-road", "second-home-on-the-road"]
+}

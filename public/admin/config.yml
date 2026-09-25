@@ -1,0 +1,233 @@
+# Prestagio Studio (Decap CMS)
+# Editors change content here; every change becomes a pull request through the
+# editorial workflow (Draft → In review → Ready) and is published only when an
+# editor merges it. Nothing publishes automatically.
+backend:
+  name: github
+  repo: sungust/prestagio
+  branch: main
+  base_url: https://prestagio.com
+  auth_endpoint: api/decap/auth
+
+publish_mode: editorial_workflow
+media_folder: public/images/uploads
+public_folder: /images/uploads
+site_url: https://prestagio.com
+logo_url: /favicon.svg
+
+collections:
+  - name: articles
+    label: Articles
+    label_singular: Article
+    folder: content/articles
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    summary: "{{title}} · {{section}} · {{status}}"
+    view_filters:
+      - { label: In review, field: status, pattern: review }
+      - { label: Published, field: status, pattern: published }
+      - { label: Drafts, field: status, pattern: draft }
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Deck, name: deck, widget: text, hint: "One or two sentences under the headline." }
+      - label: Section
+        name: section
+        widget: select
+        options: [destinations, hotels, cars, watches, aroma]
+        hint: "Destination stories live at /destinations/<first destination>/<slug>."
+      - label: Destinations
+        name: destinations
+        widget: select
+        multiple: true
+        required: false
+        options: [como, amalfi, maldives, paris, kyoto, lisbon, marrakech, engadin, highlands, capetown, venice, riviera]
+      - { label: Tags, name: tags, widget: list, required: false }
+      - { label: Author, name: author, widget: string, default: Prestagio Editors }
+      - { label: Editor, name: editor, widget: string, required: false }
+      - { label: Published, name: published, widget: datetime, format: YYYY-MM-DD, date_format: YYYY-MM-DD, time_format: false }
+      - { label: Updated, name: updated, widget: datetime, format: YYYY-MM-DD, date_format: YYYY-MM-DD, time_format: false, required: false }
+      - label: Status
+        name: status
+        widget: select
+        options: [draft, review, published]
+        default: draft
+        hint: "Only 'published' appears on prestagio.com. 'review' appears on preview deployments with a label. Never publish unreviewed AI drafts."
+      - label: Basis
+        name: basis
+        widget: select
+        options: [research, first-hand]
+        default: research
+        hint: "Choose first-hand only if the author personally visited."
+      - { label: Link label, name: linkLabel, widget: string, hint: "Specific call to action, e.g. 'Discover Como'. Never 'Explore the Journal'." }
+      - { label: Featured, name: featured, widget: boolean, required: false, default: false }
+      - label: Hero image
+        name: hero
+        widget: object
+        fields:
+          - { label: Image (licensed photo), name: src, widget: image, required: false, hint: "Leave empty to use a Prestagio illustration." }
+          - { label: Alt text, name: alt, widget: string, hint: "Describe what the image shows." }
+          - { label: Illustration scene (fallback), name: scene, widget: select, options: [lake, coast, atoll, city-night, temple, riad, alpine, highland, cape, venice, riviera, road, jet, watch, aroma, interior, architecture, spa] }
+          - { label: Tone, name: tone, widget: select, required: false, options: [dusk, day, night, dawn, golden] }
+          - { label: Credit, name: credit, widget: string, required: false, hint: "Required for photography, e.g. 'Photo: Jane Doe / Agency'." }
+          - { label: Licence, name: license, widget: string, required: false }
+          - { label: Source URL, name: sourceUrl, widget: string, required: false }
+      - label: Sources
+        name: sources
+        widget: list
+        required: false
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: URL, name: url, widget: string }
+          - { label: Publisher, name: publisher, widget: string, required: false }
+      - { label: Related (slugs), name: related, widget: list, required: false }
+      - label: Affiliate modules
+        name: affiliates
+        widget: relation
+        collection: affiliates
+        file: links
+        search_fields: ["affiliates.*.id"]
+        value_field: "affiliates.*.id"
+        display_fields: ["affiliates.*.label"]
+        multiple: true
+        required: false
+      - { label: SEO title, name: seoTitle, widget: string, required: false }
+      - { label: SEO description, name: seoDescription, widget: text, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: affiliates
+    label: Affiliate links
+    files:
+      - name: links
+        label: Agoda links
+        file: content/affiliates.json
+        fields:
+          - { label: Note, name: _note, widget: text, required: false }
+          - label: Links
+            name: affiliates
+            widget: list
+            fields:
+              - { label: ID, name: id, widget: string }
+              - { label: Label, name: label, widget: string }
+              - { label: Programme, name: program, widget: hidden, default: agoda }
+              - { label: Approved URL, name: url, widget: string, required: false, hint: "Paste only the deep link supplied by Agoda Partners." }
+              - { label: Approved, name: approved, widget: boolean, default: false, hint: "Tick only after the programme has approved this link." }
+              - { label: Fallback page, name: fallbackPath, widget: string }
+              - { label: Notes, name: notes, widget: text, required: false }
+
+  - name: planner
+    label: Planner data
+    folder: content/planner/destinations
+    extension: json
+    format: json
+    create: true
+    identifier_field: id
+    slug: "{{id}}"
+    summary: "{{name}} ({{country}})"
+    fields:
+      - { label: ID, name: id, widget: string }
+      - { label: Name, name: name, widget: string }
+      - { label: Country, name: country, widget: string }
+      - { label: Region, name: region, widget: string }
+      - { label: Diversity group, name: group, widget: string, hint: "Destinations in the same group are never revealed together." }
+      - { label: Tagline, name: tagline, widget: string }
+      - { label: What makes it distinctive, name: distinctive, widget: text }
+      - label: Image
+        name: image
+        widget: object
+        fields:
+          - { label: Image (licensed photo), name: src, widget: image, required: false }
+          - { label: Alt text, name: alt, widget: string }
+          - { label: Illustration scene, name: scene, widget: string }
+          - { label: Tone, name: tone, widget: string, required: false }
+          - { label: Credit, name: credit, widget: string, required: false }
+          - { label: Licence, name: license, widget: string, required: false }
+      - label: Mood fit (0–3)
+        name: moods
+        widget: object
+        fields:
+          - { label: Disappear by the sea, name: sea, widget: number, value_type: int, min: 0, max: 3 }
+          - { label: A city after dark, name: city, widget: number, value_type: int, min: 0, max: 3 }
+          - { label: Art and architecture, name: art, widget: number, value_type: int, min: 0, max: 3 }
+          - { label: Once in a lifetime, name: lifetime, widget: number, value_type: int, min: 0, max: 3 }
+          - { label: A beautiful long weekend, name: weekend, widget: number, value_type: int, min: 0, max: 3 }
+          - { label: Slow down and restore, name: wellness, widget: number, value_type: int, min: 0, max: 3 }
+          - { label: An iconic drive, name: drive, widget: number, value_type: int, min: 0, max: 3 }
+      - label: Why each mood fits
+        name: moodNotes
+        widget: object
+        fields:
+          - { name: sea, label: Sea, widget: text, required: false }
+          - { name: city, label: City, widget: text, required: false }
+          - { name: art, label: Art, widget: text, required: false }
+          - { name: lifetime, label: Lifetime, widget: text, required: false }
+          - { name: weekend, label: Weekend, widget: text, required: false }
+          - { name: wellness, label: Wellness, widget: text, required: false }
+          - { name: drive, label: Drive, widget: text, required: false }
+      - { label: Best months (1–12), name: bestMonths, widget: list, field: { name: m, label: Month, widget: number, value_type: int } }
+      - { label: Busiest months, name: busyMonths, widget: list, field: { name: m, label: Month, widget: number, value_type: int }, required: false }
+      - { label: Months when many stays close, name: quietMonths, widget: list, field: { name: m, label: Month, widget: number, value_type: int }, required: false }
+      - { label: Season note, name: seasonNote, widget: text }
+      - { label: Minimum nights, name: minNights, widget: number, value_type: int }
+      - { label: Ideal nights [min, max], name: idealNights, widget: list, field: { name: n, label: Nights, widget: number, value_type: int } }
+      - { label: Price level (1–4, editorial), name: priceLevel, widget: number, value_type: int, min: 1, max: 4 }
+      - label: Party fit (0–2)
+        name: party
+        widget: object
+        fields:
+          - { name: solo, label: Solo, widget: number, value_type: int }
+          - { name: couple, label: Couple, widget: number, value_type: int }
+          - { name: family, label: Family, widget: number, value_type: int }
+          - { name: friends, label: Friends, widget: number, value_type: int }
+      - label: Arrival
+        name: arrival
+        widget: object
+        fields:
+          - label: Airports
+            name: airports
+            widget: list
+            fields:
+              - { name: iata, label: IATA, widget: string }
+              - { name: name, label: Name, widget: string }
+              - { name: lat, label: Latitude, widget: number, value_type: float }
+              - { name: lon, label: Longitude, widget: number, value_type: float }
+          - { name: transfer, label: Transfer, widget: text }
+          - { name: groundNote, label: Ground note, widget: text }
+      - label: Driving
+        name: driving
+        widget: object
+        fields:
+          - { name: suitable, label: Suitable for self-drive, widget: boolean }
+          - { name: note, label: Note, widget: text }
+      - label: Car (leave empty where driving is impractical)
+        name: car
+        widget: object
+        required: false
+        fields:
+          - { name: couple, label: For two (car id), widget: string }
+          - { name: group, label: For families/friends (car id), widget: string }
+      - { label: Why this car, name: carWhy, widget: text, required: false }
+      - label: Transfer
+        name: transfer
+        widget: object
+        fields:
+          - { name: mode, label: Mode, widget: string }
+          - { name: label, label: Label, widget: string }
+          - { name: why, label: Why, widget: text }
+      - label: Stay
+        name: stay
+        widget: object
+        fields:
+          - { name: name, label: Name, widget: string }
+          - { name: place, label: Place, widget: string }
+          - { name: kind, label: Kind, widget: select, options: [hotel, resort, villa], hint: "Must be somewhere guests can stay — never an attraction." }
+          - { name: why, label: Why, widget: text }
+          - { name: affiliateId, label: Affiliate link ID, widget: string, required: false }
+      - { label: Watch (id), name: watch, widget: string }
+      - { label: Why this watch, name: watchWhy, widget: text }
+      - { label: Aroma (id), name: aroma, widget: string }
+      - { label: Why this aroma, name: aromaWhy, widget: text }
+      - { label: Three days, name: days, widget: list, fields: [{ name: title, label: Title, widget: string }, { name: text, label: Text, widget: text }] }
+      - { label: Extra days, name: moreDays, widget: list, fields: [{ name: title, label: Title, widget: string }, { name: text, label: Text, widget: text }] }
+      - { label: Related articles (slugs), name: articles, widget: list }

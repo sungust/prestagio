@@ -1,0 +1,53 @@
+{
+  "id": "kyoto",
+  "name": "Kyoto",
+  "country": "Japan",
+  "region": "Kansai",
+  "group": "japan",
+  "tagline": "Temples at first light, gardens, and the discipline of doing less.",
+  "distinctive": "Kyoto's temples, gardens and craft traditions are best met early in the morning and slowly. Its extraordinary architecture ranges from Zen gardens to the Katsura Imperial Villa.",
+  "image": { "scene": "temple", "tone": "dawn", "alt": "Illustration of a pagoda among misty hills at dawn with red maple trees" },
+  "moods": { "sea": 0, "city": 2, "art": 3, "lifetime": 3, "weekend": 0, "wellness": 2, "drive": 0 },
+  "moodNotes": {
+    "art": "Ryōan-ji's rock garden, the Katsura Imperial Villa and a living tradition of craft.",
+    "lifetime": "Kyoto at dawn, before the city wakes, is one of travel's great quiet experiences.",
+    "wellness": "Gardens, tea, forest walks and hot springs a short drive north set a calm pace.",
+    "city": "The lantern-lit lanes of Gion and a long kaiseki dinner make the evenings.",
+    "weekend": "Long-haul from most departure points. It needs more than a weekend."
+  },
+  "bestMonths": [3, 4, 5, 10, 11],
+  "busyMonths": [4, 11],
+  "quietMonths": [],
+  "seasonNote": "Cherry blossom (usually early April) and autumn colour (usually November) are beautiful and very busy. Summer is hot and humid.",
+  "minNights": 4,
+  "idealNights": [5, 8],
+  "priceLevel": 4,
+  "party": { "solo": 2, "couple": 2, "family": 1, "friends": 1 },
+  "arrival": {
+    "airports": [
+      { "iata": "KIX", "name": "Kansai International", "lat": 34.434, "lon": 135.244 },
+      { "iata": "ITM", "name": "Osaka Itami", "lat": 34.785, "lon": 135.438 }
+    ],
+    "transfer": "From Kansai International, the Haruka limited express reaches Kyoto Station in roughly 75–80 minutes. A private car takes about 90 minutes or more, depending on traffic.",
+    "groundNote": "Arriving via Tokyo, the Shinkansen to Kyoto takes a little over two hours."
+  },
+  "driving": { "suitable": false, "note": "Kyoto's streets are narrow and parking is scarce, and Japan requires an International Driving Permit. Rail, taxis and a private driver work far better." },
+  "car": null,
+  "transfer": { "mode": "rail-chauffeur", "label": "Rail and a private driver", "why": "The train for the arrival, and a private driver for the scattered temples and gardens on the city's edges." },
+  "stay": { "name": "Aman Kyoto", "place": "Northern Kyoto", "kind": "hotel", "why": "A secluded retreat in a forest garden at the foot of Kyoto's northern hills, close to Kinkaku-ji and well placed for early temple visits.", "affiliateId": "agoda-kyoto-aman" },
+  "watch": "snowflake",
+  "watchWhy": "The Snowflake's textured dial is inspired by snow in Japan, and its gliding Spring Drive seconds hand suits a city of patient craft.",
+  "aroma": "hinoki-tea",
+  "aromaWhy": "Hinoki, the cypress of Japanese baths and temples, with green tea and a thread of incense.",
+  "days": [
+    { "title": "Northern temples", "text": "Visit Kinkaku-ji as it opens, then the rock garden at Ryōan-ji. Rest in the afternoon and have a kaiseki dinner in the evening." },
+    { "title": "The eastern hills", "text": "Reach Kiyomizu-dera early and walk down through Higashiyama. Join a tea ceremony in the afternoon, then walk the lanes of Gion at dusk." },
+    { "title": "Arashiyama and Katsura", "text": "See the bamboo grove at first light, then tour the Katsura Imperial Villa, which requires an advance reservation." }
+  ],
+  "moreDays": [
+    { "title": "Kurama and Kibune", "text": "Walk the forest trail between the two mountain villages, with lunch by the stream in summer." },
+    { "title": "Nara", "text": "Take a day trip to Tōdai-ji and the deer park, arriving early." },
+    { "title": "Miho Museum", "text": "Drive into the Shiga hills to I. M. Pei's Miho Museum, as remarkable for its approach as its collection." }
+  ],
+  "articles": ["kyoto-in-slow-motion", "a-watch-for-two-time-zones"]
+}

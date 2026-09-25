@@ -1,0 +1,10 @@
+{
+  "cars": [
+    { "id": "aston-db12-volante", "name": "Aston Martin DB12 Volante", "seats": 4, "character": "A convertible grand tourer: roof down along the water, roof up and quiet for the motorway home.", "cabin": "Two proper front seats and occasional rear seats; luggage space suits a couple travelling light." },
+    { "id": "ferrari-roma-spider", "name": "Ferrari Roma Spider", "seats": 4, "character": "A front-engined V8 with a fabric roof, as happy idling through a harbour town as climbing a corniche.", "cabin": "Built around two people, with small rear seats best used for bags." },
+    { "id": "bentley-continental-gt", "name": "Bentley Continental GT", "seats": 4, "character": "All-wheel drive, a deeply finished cabin and long-distance calm: made for crossing mountains in comfort.", "cabin": "Four seats and a boot that takes a week's luggage for two." },
+    { "id": "porsche-911-targa", "name": "Porsche 911 Targa 4", "seats": 4, "character": "Precise, compact and all-wheel drive, with an open roof panel for the coast road and composure on the pass.", "cabin": "A driver's car for two, with small rear seats and a front luggage compartment." },
+    { "id": "range-rover", "name": "Range Rover", "seats": 5, "character": "A quiet, high-riding cabin for families, luggage and changeable weather.", "cabin": "Five full seats and generous luggage space; a composed choice on narrow or unsealed roads." },
+    { "id": "defender", "name": "Land Rover Defender 110", "seats": 5, "character": "Upright, robust and at ease on single-track roads, gravel and weather that changes by the hour.", "cabin": "Five seats (some versions seat more) and room for boots, bags and a picnic." }
+  ]
+}

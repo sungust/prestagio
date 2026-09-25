@@ -1,0 +1,101 @@
+{
+  "_note": "Paste approved Agoda deep links into url and set approved:true only after the Agoda Partners programme has approved Prestagio and the link. Until then links stay inactive and visitors see the fallbackPath editorial page. Never invent affiliate IDs.",
+  "affiliates": [
+    {
+      "id": "agoda-como-villa-deste",
+      "label": "Villa d’Este, Cernobbio",
+      "program": "agoda",
+      "url": "",
+      "approved": false,
+      "fallbackPath": "/hotels/where-to-stay-on-lake-como"
+    },
+    {
+      "id": "agoda-amalfi-le-sirenuse",
+      "label": "Le Sirenuse, Positano",
+      "program": "agoda",
+      "url": "",
+      "approved": false,
+      "fallbackPath": "/destinations/amalfi"
+    },
+    {
+      "id": "agoda-maldives-soneva-fushi",
+      "label": "Soneva Fushi, Baa Atoll",
+      "program": "agoda",
+      "url": "",
+      "approved": false,
+      "fallbackPath": "/hotels/a-private-shore-in-the-maldives"
+    },
+    {
+      "id": "agoda-paris-ritz",
+      "label": "Ritz Paris",
+      "program": "agoda",
+      "url": "",
+      "approved": false,
+      "fallbackPath": "/destinations/paris"
+    },
+    {
+      "id": "agoda-kyoto-aman",
+      "label": "Aman Kyoto",
+      "program": "agoda",
+      "url": "",
+      "approved": false,
+      "fallbackPath": "/destinations/kyoto"
+    },
+    {
+      "id": "agoda-lisbon-bairro-alto",
+      "label": "Bairro Alto Hotel, Lisbon",
+      "program": "agoda",
+      "url": "",
+      "approved": false,
+      "fallbackPath": "/destinations/lisbon"
+    },
+    {
+      "id": "agoda-marrakech-mamounia",
+      "label": "La Mamounia, Marrakech",
+      "program": "agoda",
+      "url": "",
+      "approved": false,
+      "fallbackPath": "/destinations/marrakech"
+    },
+    {
+      "id": "agoda-engadin-badrutts",
+      "label": "Badrutt’s Palace Hotel, St. Moritz",
+      "program": "agoda",
+      "url": "",
+      "approved": false,
+      "fallbackPath": "/destinations/engadin"
+    },
+    {
+      "id": "agoda-highlands-inverlochy",
+      "label": "Inverlochy Castle Hotel, Fort William",
+      "program": "agoda",
+      "url": "",
+      "approved": false,
+      "fallbackPath": "/destinations/highlands"
+    },
+    {
+      "id": "agoda-capetown-ellerman",
+      "label": "Ellerman House, Cape Town",
+      "program": "agoda",
+      "url": "",
+      "approved": false,
+      "fallbackPath": "/destinations/capetown"
+    },
+    {
+      "id": "agoda-venice-aman",
+      "label": "Aman Venice",
+      "program": "agoda",
+      "url": "",
+      "approved": false,
+      "fallbackPath": "/destinations/venice"
+    },
+    {
+      "id": "agoda-riviera-cap-ferrat",
+      "label": "Grand-Hôtel du Cap-Ferrat",
+      "program": "agoda",
+      "url": "",
+      "approved": false,
+      "fallbackPath": "/destinations/riviera"
+    }
+  ]
+}

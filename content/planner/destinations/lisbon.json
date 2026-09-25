@@ -1,0 +1,121 @@
+{
+  "id": "lisbon",
+  "name": "Lisbon and the Sintra coast",
+  "country": "Portugal",
+  "region": "Lisbon",
+  "group": "portugal",
+  "tagline": "Tiled facades, river light, and a coast road waiting just beyond the city.",
+  "distinctive": "Lisbon is a city of hills, tile and river light. It is close enough to the Atlantic coast and the palaces of Sintra that one long weekend can hold both.",
+  "image": {
+    "scene": "coast",
+    "tone": "golden",
+    "alt": "Illustration of a hillside city of pale houses above the water in golden evening light"
+  },
+  "moods": {
+    "sea": 2,
+    "city": 3,
+    "art": 2,
+    "lifetime": 1,
+    "weekend": 3,
+    "wellness": 1,
+    "drive": 2
+  },
+  "moodNotes": {
+    "weekend": "The airport is close to the centre, so you can be at lunch in Chiado soon after landing.",
+    "city": "Late dinners, rooftop bars and fado in the old quarters.",
+    "art": "Belém's Jerónimos Monastery, the Gulbenkian collections and the romantic palaces of Sintra.",
+    "sea": "Atlantic beaches at Cascais and beyond, a short drive west.",
+    "drive": "The coast road to Cabo da Roca and the forest roads through the Sintra hills make a perfect day out."
+  },
+  "bestMonths": [
+    3,
+    4,
+    5,
+    6,
+    9,
+    10
+  ],
+  "busyMonths": [
+    7,
+    8
+  ],
+  "quietMonths": [],
+  "seasonNote": "Lisbon is mild most of the year. High summer is warm and busy.",
+  "minNights": 2,
+  "idealNights": [
+    3,
+    4
+  ],
+  "priceLevel": 2,
+  "party": {
+    "solo": 2,
+    "couple": 2,
+    "family": 2,
+    "friends": 2
+  },
+  "arrival": {
+    "airports": [
+      {
+        "iata": "LIS",
+        "name": "Lisbon Humberto Delgado",
+        "lat": 38.774,
+        "lon": -9.134
+      }
+    ],
+    "transfer": "The airport sits close to the city. The drive to the centre is typically 20–30 minutes.",
+    "groundNote": "In the city, walk, take the trams, or use a driver. Collect a car only for the coast and Sintra."
+  },
+  "driving": {
+    "suitable": true,
+    "note": "Leave the car out of Lisbon's steep old quarters, but take one for the coast road and the Sintra hills."
+  },
+  "car": {
+    "couple": "porsche-911-targa",
+    "group": "range-rover"
+  },
+  "carWhy": "An open-roofed, compact car suits the narrow Sintra roads and the Atlantic coast road equally well.",
+  "transfer": {
+    "mode": "chauffeur",
+    "label": "Driver in the city",
+    "why": "A driver for the airport and for evenings in the old quarters, where streets are steep and narrow."
+  },
+  "stay": {
+    "name": "Bairro Alto Hotel",
+    "place": "Chiado",
+    "kind": "hotel",
+    "why": "A boutique hotel on Praça Luís de Camões, between Chiado and the Bairro Alto, with a rooftop looking toward the river.",
+    "affiliateId": "agoda-lisbon-bairro-alto"
+  },
+  "watch": "portugieser",
+  "watchWhy": "A watch whose origin story is traditionally traced to Portuguese merchants, worn in the city those merchants sailed from.",
+  "aroma": "orange-cedar",
+  "aromaWhy": "Bitter orange and cedar for a city of citrus trees and sea air, and fresh enough for the car on the coast road.",
+  "days": [
+    {
+      "title": "Chiado and the miradouros",
+      "text": "Spend the afternoon between the viewpoints of the old city, then have dinner in Príncipe Real and a late drink on a rooftop."
+    },
+    {
+      "title": "Belém",
+      "text": "Visit the Jerónimos Monastery early, then see MAAT on the riverfront. Custard tarts are obligatory."
+    },
+    {
+      "title": "Sintra and the coast",
+      "text": "Drive to Sintra for its palaces and gardens, then return by Cabo da Roca and Cascais along the Atlantic."
+    }
+  ],
+  "moreDays": [
+    {
+      "title": "The Gulbenkian",
+      "text": "See the Calouste Gulbenkian Museum and its gardens, one of Europe's great private collections."
+    },
+    {
+      "title": "Comporta",
+      "text": "Drive south for long Atlantic beaches, rice fields and a very long lunch."
+    }
+  ],
+  "articles": [
+    "a-long-weekend-in-lisbon",
+    "second-home-on-the-road"
+  ]
+}

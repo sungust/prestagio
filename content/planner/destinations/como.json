@@ -1,0 +1,55 @@
+{
+  "id": "como",
+  "name": "Lake Como",
+  "country": "Italy",
+  "region": "Lombardy",
+  "group": "italy",
+  "tagline": "Villas, gardens and a rationalist masterpiece, an hour from Milan.",
+  "distinctive": "Lake Como pairs the grand villa gardens of its shoreline with something few lake resorts have: Como town's remarkable twentieth-century architecture. Mornings on the water, afternoons in gardens and a car for the hill roads make it complete.",
+  "image": { "scene": "lake", "tone": "golden", "alt": "Illustration of Lake Como seen from a stone terrace, with cypresses and mountains beyond" },
+  "moods": { "sea": 2, "city": 0, "art": 3, "lifetime": 2, "weekend": 3, "wellness": 2, "drive": 2 },
+  "moodNotes": {
+    "sea": "A lake rather than the sea, but mornings are spent on the water and villages are best reached by boat.",
+    "art": "Villa gardens at Tremezzo and Bellagio, and Giuseppe Terragni's Casa del Fascio in Como town, a landmark of Italian rationalism.",
+    "lifetime": "The lake's grand historic villa hotels make a first visit feel like an occasion.",
+    "weekend": "Milan's airports are roughly an hour away, so a long weekend loses little time to travel.",
+    "wellness": "Lakeside spas, quiet gardens and slow boat days make it a gentle place to rest.",
+    "drive": "The western shore road and the hills above Menaggio reward an early start."
+  },
+  "bestMonths": [4, 5, 6, 9, 10],
+  "busyMonths": [7, 8],
+  "quietMonths": [11, 12, 1, 2, 3],
+  "seasonNote": "Many lakeside hotels close from roughly November to March; July and August are the busiest months.",
+  "minNights": 2,
+  "idealNights": [3, 5],
+  "priceLevel": 3,
+  "party": { "solo": 1, "couple": 2, "family": 1, "friends": 2 },
+  "arrival": {
+    "airports": [
+      { "iata": "MXP", "name": "Milan Malpensa", "lat": 45.630, "lon": 8.723 },
+      { "iata": "LIN", "name": "Milan Linate", "lat": 45.445, "lon": 9.277 }
+    ],
+    "transfer": "Allow roughly an hour to an hour and a half by road from either Milan airport to the western shore, more at busy times.",
+    "groundNote": "Lakeside roads are narrow and crowded in summer. Public ferries and private water taxis are often the more graceful way between villages."
+  },
+  "driving": { "suitable": true, "note": "Rewarding outside peak weekends: the western shore and the climbs into the hills. Leave the car parked on the days you spend on the water." },
+  "car": { "couple": "aston-db12-volante", "group": "range-rover" },
+  "carWhy": "The lake is made for a slow open-top drive, and a grand tourer is just as comfortable for the motorway back to Milan.",
+  "transfer": { "mode": "boat", "label": "Private boat between villages", "why": "Book a boat for the days in Bellagio and Tremezzo; it is quicker than the road and far more beautiful." },
+  "stay": { "name": "Villa d'Este", "place": "Cernobbio", "kind": "hotel", "why": "A historic villa hotel in large gardens on the water at Cernobbio. It is close to Como town for the architecture day and on the western shore for the drives.", "affiliateId": "agoda-como-villa-deste" },
+  "watch": "reverso",
+  "watchWhy": "The Reverso and Terragni's Casa del Fascio date from the same years between the wars. Both are exercises in rational, elegant geometry.",
+  "aroma": "cypress-stone",
+  "aromaWhy": "Cypress, fig leaf and warm stone recall the lake's terraced gardens and are fresh enough for a warm car.",
+  "days": [
+    { "title": "Arrive by water", "text": "Check in, then take a boat north along the western shore past the wooded headland of Villa del Balbianello. Dine by the lake as the light goes." },
+    { "title": "Como's rationalist heart", "text": "Spend a morning in Como town: the cathedral, then Giuseppe Terragni's Casa del Fascio on Piazza del Popolo, an architecture stop rather than a place to stay. Ride the funicular to Brunate for the view in the late afternoon." },
+    { "title": "Gardens of the mid-lake", "text": "See the gardens of Villa Carlotta at Tremezzo, cross to Bellagio by ferry, and have a late lunch. Drive the shore road home at sunset." }
+  ],
+  "moreDays": [
+    { "title": "Into the hills", "text": "Drive up from Menaggio into the hills for mountain views and a long lunch well away from the waterfront." },
+    { "title": "The eastern shore", "text": "Take the ferry to Varenna for the gardens of Villa Monastero and a walk along the lakeside path." },
+    { "title": "A slower day", "text": "Spend the day at the spa and a lakeside lido, with nothing else planned." }
+  ],
+  "articles": ["lake-como-beyond-the-postcard", "where-to-stay-on-lake-como", "the-reverso-and-the-rationalists"]
+}

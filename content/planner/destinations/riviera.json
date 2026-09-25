@@ -1,0 +1,50 @@
+{
+  "id": "riviera",
+  "name": "Cap-Ferrat and the Riviera",
+  "country": "France",
+  "region": "Provence-Alpes-Côte d'Azur",
+  "group": "france-coast",
+  "tagline": "Three corniches, hilltop villages, and the sea at every turn.",
+  "distinctive": "The Riviera between Nice and Monaco combines Belle Époque villas, hilltop villages full of art, and three corniche roads stacked one above the other along the coast.",
+  "image": { "scene": "riviera", "tone": "day", "alt": "Illustration of a Riviera hillside town above a blue sea, with a red convertible on the coast road" },
+  "moods": { "sea": 3, "city": 1, "art": 2, "lifetime": 2, "weekend": 3, "wellness": 1, "drive": 3 },
+  "moodNotes": {
+    "sea": "Swim from the rocks at Cap-Ferrat and lunch at a beach club.",
+    "drive": "The Grande, Moyenne and Basse Corniches are some of Europe's classic coastal drives.",
+    "art": "The Fondation Maeght, Matisse's chapel at Vence, and Villa Ephrussi's gardens.",
+    "weekend": "Nice airport is close, so a long weekend is easy from much of Europe.",
+    "lifetime": "A convertible on the corniche at golden hour is as good as it sounds."
+  },
+  "bestMonths": [5, 6, 9, 10],
+  "busyMonths": [7, 8],
+  "quietMonths": [11, 12, 1, 2],
+  "seasonNote": "May, June, September and October are ideal. Summer traffic is heavy, and some hotels close in winter.",
+  "minNights": 2,
+  "idealNights": [3, 5],
+  "priceLevel": 4,
+  "party": { "solo": 1, "couple": 2, "family": 2, "friends": 2 },
+  "arrival": {
+    "airports": [{ "iata": "NCE", "name": "Nice Côte d'Azur", "lat": 43.658, "lon": 7.216 }],
+    "transfer": "Saint-Jean-Cap-Ferrat is roughly 30 minutes by road from Nice airport, traffic permitting.",
+    "groundNote": "Collect the car at the airport. Drive early in the day in summer, before the traffic."
+  },
+  "driving": { "suitable": true, "note": "The corniches between Nice and Menton are classic drives. Summer traffic is heavy, so go early, and park in the villages rather than trying to drive through them." },
+  "car": { "couple": "ferrari-roma-spider", "group": "range-rover" },
+  "carWhy": "A front-engined convertible is at home on the corniche: roof down, unhurried, with the sea on one side.",
+  "transfer": { "mode": "chauffeur", "label": "Driver for evenings", "why": "Keep a driver for dinners in Monaco or the hill villages, so no one has to choose water over wine." },
+  "stay": { "name": "Grand-Hôtel du Cap-Ferrat", "place": "Saint-Jean-Cap-Ferrat", "kind": "hotel", "why": "A Belle Époque hotel in large gardens at the tip of the peninsula, with the corniches on one side and the sea on the other.", "affiliateId": "agoda-riviera-cap-ferrat" },
+  "watch": "overseas",
+  "watchWhy": "A refined sports watch whose strap changes easily, from bracelet on the boat to leather for dinner.",
+  "aroma": "fig-mimosa",
+  "aromaWhy": "Green fig and sunny mimosa, both at home on this coast, with a trace of salt.",
+  "days": [
+    { "title": "The cap", "text": "Walk the coastal path around Cap-Ferrat, then visit the gardens of Villa Ephrussi de Rothschild in the afternoon." },
+    { "title": "The Grande Corniche", "text": "Drive via Èze to La Turbie in the morning, have a long lunch, and dine in Monaco with a driver." },
+    { "title": "Art in the hills", "text": "Visit Saint-Paul-de-Vence and the Fondation Maeght, then Matisse's Chapelle du Rosaire in Vence." }
+  ],
+  "moreDays": [
+    { "title": "Antibes", "text": "See the Picasso Museum in the Château Grimaldi and walk the ramparts." },
+    { "title": "Îles de Lérins", "text": "Take a boat from Cannes to the quiet, pine-covered islands." }
+  ],
+  "articles": ["second-home-on-the-road"]
+}

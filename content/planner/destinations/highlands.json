@@ -1,0 +1,53 @@
+{
+  "id": "highlands",
+  "name": "The Scottish Highlands",
+  "country": "United Kingdom",
+  "region": "Scotland",
+  "group": "uk",
+  "tagline": "Glens, sea lochs and single-track roads that ask you to slow down.",
+  "distinctive": "The western Highlands combine mountains, sea lochs and white-sand beaches, with a light that changes by the minute. The roads are part of the experience and reward patience.",
+  "image": { "scene": "highland", "tone": "dawn", "alt": "Illustration of moorland hills above a sea loch with a car on a winding road" },
+  "moods": { "sea": 1, "city": 0, "art": 0, "lifetime": 2, "weekend": 1, "wellness": 2, "drive": 3 },
+  "moodNotes": {
+    "drive": "Glencoe, the Road to the Isles and the single-track roads of the west are legendary.",
+    "wellness": "Long walks, big skies, sea swimming for the brave and a fire in the evening.",
+    "lifetime": "A clear evening on the western coast, looking toward the islands, stays with you.",
+    "sea": "Sea lochs and the white beaches of Arisaig and Morar."
+  },
+  "bestMonths": [5, 6, 7, 8, 9],
+  "busyMonths": [7, 8],
+  "quietMonths": [],
+  "seasonNote": "Late spring to early autumn has the longest days. Midges can be troublesome on still summer evenings in the west.",
+  "minNights": 3,
+  "idealNights": [4, 7],
+  "priceLevel": 2,
+  "party": { "solo": 2, "couple": 2, "family": 2, "friends": 2 },
+  "arrival": {
+    "airports": [
+      { "iata": "INV", "name": "Inverness", "lat": 57.542, "lon": -4.048 },
+      { "iata": "GLA", "name": "Glasgow", "lat": 55.872, "lon": -4.433 }
+    ],
+    "transfer": "Fort William is roughly two hours by road from Inverness, and a little more from Glasgow.",
+    "groundNote": "Collect the car at the airport. Distances look short on the map, but the roads are slow."
+  },
+  "driving": { "suitable": true, "note": "Many roads are single-track with passing places. Drive unhurriedly, pull in to let others pass, and allow more time than the map suggests." },
+  "car": { "couple": "range-rover", "group": "defender" },
+  "carWhy": "Height, visibility and composure on narrow, wet roads matter more here than outright pace.",
+  "transfer": { "mode": "rail", "label": "West Highland Line", "why": "The train from Glasgow to Fort William and Mallaig is itself one of Britain's great journeys." },
+  "stay": { "name": "Inverlochy Castle Hotel", "place": "Fort William", "kind": "hotel", "why": "A Victorian castle hotel in its own grounds beneath Ben Nevis, central for Glencoe and the Road to the Isles.", "affiliateId": "agoda-highlands-inverlochy" },
+  "watch": "black-bay",
+  "watchWhy": "Robust, legible and water-resistant, a watch to wear in weather that changes by the hour.",
+  "aroma": "heather-peat",
+  "aromaWhy": "Heather, bog myrtle and a wisp of peat smoke: the Highlands after rain, brought indoors.",
+  "days": [
+    { "title": "The Great Glen", "text": "Drive from Inverness along Loch Ness to Fort William, stopping wherever the light is good." },
+    { "title": "Glencoe", "text": "Take a morning drive and a walk in Glencoe, then visit Glenfinnan's viaduct and monument in the afternoon." },
+    { "title": "The Road to the Isles", "text": "Follow the road west to the white beaches of Arisaig and Morar. Have lunch by the sea and watch the sunset over the islands." }
+  ],
+  "moreDays": [
+    { "title": "Skye", "text": "Cross to Skye for the Quiraing and the Trotternish coast." },
+    { "title": "A distillery", "text": "Tour a Highland distillery. Choose a nominated driver, or have one of ours." },
+    { "title": "Applecross", "text": "Take the Bealach na Bà, a steep single-track pass for confident drivers only, in good weather." }
+  ],
+  "articles": ["second-home-on-the-road"]
+}

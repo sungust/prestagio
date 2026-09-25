@@ -1,0 +1,49 @@
+{
+  "id": "venice",
+  "name": "Venice",
+  "country": "Italy",
+  "region": "Veneto",
+  "group": "italy-venice",
+  "tagline": "A city without cars, arrived at by water.",
+  "distinctive": "There is no arrival like Venice's: a water taxi across the lagoon to a palazzo landing stage. It is at its best early in the morning and late at night, when the day visitors have gone.",
+  "image": { "scene": "venice", "tone": "dusk", "alt": "Illustration of domes and a bell tower across the lagoon at dusk, with a gondola" },
+  "moods": { "sea": 1, "city": 2, "art": 3, "lifetime": 3, "weekend": 3, "wellness": 0, "drive": 0 },
+  "moodNotes": {
+    "art": "Byzantine mosaics, Titian and Tintoretto, the Peggy Guggenheim Collection and the Biennale.",
+    "lifetime": "The water-taxi arrival across the lagoon is one of travel's great moments.",
+    "weekend": "Marco Polo Airport is a short boat ride away, so the city works well for a long weekend.",
+    "city": "Quiet after dark: bacari, a performance at La Fenice, a walk through empty squares.",
+    "sea": "The lagoon and its islands rather than beaches."
+  },
+  "bestMonths": [3, 4, 5, 9, 10, 11],
+  "busyMonths": [7, 8],
+  "quietMonths": [],
+  "seasonNote": "Spring and autumn are gentler than the crowded, humid summer. Late autumn and winter can bring high water (acqua alta).",
+  "minNights": 2,
+  "idealNights": [3, 4],
+  "priceLevel": 4,
+  "party": { "solo": 2, "couple": 2, "family": 1, "friends": 1 },
+  "arrival": {
+    "airports": [{ "iata": "VCE", "name": "Venice Marco Polo", "lat": 45.505, "lon": 12.352 }],
+    "transfer": "A private water taxi from Marco Polo takes roughly half an hour to the historic centre, and many hotels have their own landing stage.",
+    "groundNote": "Pack light: bridges and steps are everywhere, and porters can meet your boat."
+  },
+  "driving": { "suitable": false, "note": "The historic centre has no roads. Arrive by water taxi and travel on foot or by boat." },
+  "car": null,
+  "transfer": { "mode": "water-taxi", "label": "Private water taxi", "why": "Across the lagoon and into the Grand Canal, the arrival is the first great sight of the trip." },
+  "stay": { "name": "Aman Venice", "place": "Grand Canal", "kind": "hotel", "why": "A hotel in Palazzo Papadopoli, a sixteenth-century palazzo on the Grand Canal with frescoed interiors and private gardens.", "affiliateId": "agoda-venice-aman" },
+  "watch": "calatrava",
+  "watchWhy": "A slim, quiet dress watch for evenings at La Fenice and dinners in candlelit palazzi.",
+  "aroma": "amber-salt",
+  "aromaWhy": "Warm amber resin and lagoon salt, like an old palazzo interior on a winter afternoon.",
+  "days": [
+    { "title": "Arrive by water", "text": "Cross by water taxi to the hotel's landing stage. In the evening, drift between bacari for cicchetti." },
+    { "title": "San Marco early", "text": "Visit the Basilica early, then the Doge's Palace. See the Peggy Guggenheim Collection in the afternoon, and a performance at La Fenice in the evening if one is scheduled." },
+    { "title": "The lagoon islands", "text": "Take a boat to Torcello for its cathedral mosaics, then Burano's colours and a long lunch." }
+  ],
+  "moreDays": [
+    { "title": "The Biennale", "text": "The Biennale alternates art and architecture exhibitions. Check what is on." },
+    { "title": "Palladio on the Brenta", "text": "Take a boat along the Brenta Canal to the Palladian villas." }
+  ],
+  "articles": ["the-arrival-is-part-of-the-story"]
+}

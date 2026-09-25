@@ -1,0 +1,49 @@
+{
+  "id": "maldives",
+  "name": "Baa Atoll, Maldives",
+  "country": "Maldives",
+  "region": "Baa Atoll",
+  "group": "indian-ocean",
+  "tagline": "A private shore in a UNESCO Biosphere Reserve.",
+  "distinctive": "Baa Atoll is a UNESCO Biosphere Reserve, known for its reefs and for the manta rays that gather at Hanifaru Bay in season. It is a place for doing very little, very well.",
+  "image": { "scene": "atoll", "tone": "dusk", "alt": "Illustration of overwater villas on stilts above a calm lagoon at sunset" },
+  "moods": { "sea": 3, "city": 0, "art": 0, "lifetime": 3, "weekend": 0, "wellness": 3, "drive": 0 },
+  "moodNotes": {
+    "sea": "Your own stretch of lagoon, reef a few strokes from the steps, and nothing on the horizon.",
+    "lifetime": "The seaplane landing alone is a memory, and the reef life of Baa Atoll is internationally recognised.",
+    "wellness": "Barefoot days, spa rituals and uninterrupted sleep: restoration is the point.",
+    "weekend": "The long flights from most departure points make a weekend impractical."
+  },
+  "bestMonths": [12, 1, 2, 3, 4],
+  "busyMonths": [12, 1],
+  "quietMonths": [],
+  "seasonNote": "The northeast monsoon months, roughly December to April, are usually drier. The southwest monsoon brings more rain, and it is also the manta season in Baa Atoll.",
+  "minNights": 5,
+  "idealNights": [7, 10],
+  "priceLevel": 4,
+  "party": { "solo": 0, "couple": 2, "family": 2, "friends": 1 },
+  "arrival": {
+    "airports": [{ "iata": "MLE", "name": "Velana International, Malé", "lat": 4.192, "lon": 73.529 }],
+    "transfer": "Resorts arrange seaplane transfers from Malé, and seaplanes fly only in daylight. Some atolls are reached by domestic flight and speedboat instead.",
+    "groundNote": "Late international arrivals may need a night near Malé before the seaplane. Confirm connection times with your resort."
+  },
+  "driving": { "suitable": false, "note": "There are no roads between island resorts. The journey is by seaplane or boat." },
+  "car": null,
+  "transfer": { "mode": "seaplane", "label": "Seaplane transfer", "why": "The flight low over the atolls is part of the arrival and takes you almost to your door." },
+  "stay": { "name": "Soneva Fushi", "place": "Baa Atoll", "kind": "resort", "why": "A barefoot-luxury island resort whose villas sit among the island's vegetation, suited to both couples and families.", "affiliateId": "agoda-maldives-soneva-fushi" },
+  "watch": "submariner",
+  "watchWhy": "A proper dive watch belongs on a reef holiday: a rotating bezel for snorkel time, and it needs no attention.",
+  "aroma": "vetiver-coconut",
+  "aromaWhy": "Cool vetiver and a milky coconut note make an island villa smell quietly of the tropics without sweetness.",
+  "days": [
+    { "title": "Land softly", "text": "Take the seaplane from Malé, then spend the rest of the day between the villa and the lagoon." },
+    { "title": "The house reef", "text": "Snorkel the reef with a guide in the morning. Rest through the heat, then take a boat out at sunset." },
+    { "title": "Rays and a sandbank", "text": "In season, ask about regulated visits to Hanifaru Bay for the mantas. Otherwise, take a picnic to a sandbank." }
+  ],
+  "moreDays": [
+    { "title": "A spa day", "text": "Book a long treatment and hand the rest of the day to the hammock." },
+    { "title": "Island life", "text": "With the resort's guidance, visit a local island community respectfully." },
+    { "title": "Night sky", "text": "With little light pollution, the stars are extraordinary. Ask whether the resort has an observatory or a guided evening." }
+  ],
+  "articles": ["a-private-shore-in-the-maldives", "the-arrival-is-part-of-the-story"]
+}

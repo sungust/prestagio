@@ -1,0 +1,50 @@
+{
+  "id": "amalfi",
+  "name": "The Amalfi Coast",
+  "country": "Italy",
+  "region": "Campania",
+  "group": "italy-south",
+  "tagline": "Cliffside villages, lemon terraces and a coast best seen from the sea.",
+  "distinctive": "A UNESCO-listed coastline of steep terraces, pastel villages and gardens hung above the sea. It rewards arriving slowly, by boat where possible, and staying long enough to ignore the itinerary.",
+  "image": { "scene": "coast", "tone": "dusk", "alt": "Illustration of a cliffside village above the sea at sunset, with small boats below" },
+  "moods": { "sea": 3, "city": 0, "art": 2, "lifetime": 3, "weekend": 1, "wellness": 1, "drive": 0 },
+  "moodNotes": {
+    "sea": "Days start with a swim from the rocks and end with a boat back along the cliffs.",
+    "art": "Ravello's villa gardens, the cathedral at Amalfi and the Greek temples of Paestum within a day's reach.",
+    "lifetime": "Few coastlines anywhere are as dramatic, and the terraces at dusk live up to every picture you have seen.",
+    "weekend": "Possible as a long weekend from Europe, but the transfer from Naples means it rewards more time.",
+    "wellness": "Slow mornings, sea swimming and long lunches set the pace."
+  },
+  "bestMonths": [5, 6, 9, 10],
+  "busyMonths": [7, 8],
+  "quietMonths": [11, 12, 1, 2, 3],
+  "seasonNote": "Many hotels on the coast are seasonal and close through the winter. July and August are the most crowded months.",
+  "minNights": 3,
+  "idealNights": [4, 6],
+  "priceLevel": 4,
+  "party": { "solo": 1, "couple": 2, "family": 1, "friends": 1 },
+  "arrival": {
+    "airports": [{ "iata": "NAP", "name": "Naples", "lat": 40.886, "lon": 14.291 }],
+    "transfer": "Allow roughly 75 minutes to two hours by road to Positano or Ravello, depending on traffic. In season, a car to the port and a boat along the coast is an elegant alternative.",
+    "groundNote": "The coast road is narrow and winding, and it is congested in summer. Parking in the villages is scarce and expensive."
+  },
+  "driving": { "suitable": false, "note": "We do not recommend self-driving here in season. The coast road is demanding, parking is scarce, and the best views are from the water." },
+  "car": null,
+  "transfer": { "mode": "chauffeur-boat", "label": "Private driver and boat", "why": "A local driver takes the coast road so you can look at it, and a private boat reaches the grottoes, beaches and Capri." },
+  "stay": { "name": "Le Sirenuse", "place": "Positano", "kind": "hotel", "why": "A long-established family-run hotel above Positano's beach, known for its terraces facing the town and sea. It is a natural base for boat days.", "affiliateId": "agoda-amalfi-le-sirenuse" },
+  "watch": "seamaster-300",
+  "watchWhy": "A water-resistant diver's watch you can wear from a morning swim to dinner on the terrace without a second thought.",
+  "aroma": "lemon-neroli",
+  "aromaWhy": "Lemon leaf and neroli reflect the coast's terraced citrus groves and suit a sea-facing room.",
+  "days": [
+    { "title": "Arrive by sea", "text": "Transfer from Naples and settle in. In the evening, walk down through Positano to the beach for an early dinner by the water." },
+    { "title": "Ravello's gardens", "text": "Have a driver take you up to Ravello for the gardens of Villa Rufolo and the belvedere of Villa Cimbrone. Return for a late swim." },
+    { "title": "A day on the water", "text": "Charter a boat for the coves and grottoes of the coast, with lunch at a beach restaurant reached only by sea." }
+  ],
+  "moreDays": [
+    { "title": "Capri", "text": "Take an early boat to Capri and leave before the day crowds peak." },
+    { "title": "Paestum", "text": "Drive south with a driver to the Greek temples of Paestum, some of the best preserved anywhere." },
+    { "title": "The Path of the Gods", "text": "Walk the Sentiero degli Dei in the cool of the morning, with good shoes, water and a guide if you prefer." }
+  ],
+  "articles": ["amalfi-without-the-wheel", "the-arrival-is-part-of-the-story"]
+}

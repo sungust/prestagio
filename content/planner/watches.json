@@ -1,0 +1,16 @@
+{
+  "watches": [
+    { "id": "reverso", "maker": "Jaeger-LeCoultre", "model": "Reverso", "since": 1931, "note": "The swivelling case, first made in 1931 to protect the crystal during polo, has the clean Art Deco geometry of its decade." },
+    { "id": "seamaster-300", "maker": "Omega", "model": "Seamaster Diver 300M", "note": "A water-resistant diver's watch with a helium escape valve, equally at home on deck and at dinner." },
+    { "id": "submariner", "maker": "Rolex", "model": "Submariner", "note": "The archetypal dive watch: a rotating bezel, a legible dial and a case made for salt water." },
+    { "id": "tank", "maker": "Cartier", "model": "Tank", "since": 1917, "note": "A rectangular Parisian design from 1917 whose proportions have barely needed to change." },
+    { "id": "snowflake", "maker": "Grand Seiko", "model": "SBGA211 'Snowflake'", "note": "A textured white dial and a titanium case around a Spring Drive movement with its gliding seconds hand." },
+    { "id": "portugieser", "maker": "IWC", "model": "Portugieser", "since": 1939, "note": "A large, legible dial whose origins are traditionally traced to two Portuguese merchants seeking marine-chronometer precision." },
+    { "id": "santos", "maker": "Cartier", "model": "Santos", "since": 1904, "note": "The square-cased watch created for the aviator Alberto Santos-Dumont, with exposed screws on the bezel." },
+    { "id": "royal-oak", "maker": "Audemars Piguet", "model": "Royal Oak", "since": 1972, "note": "Gérald Genta's octagonal steel design, finished with the care usually reserved for precious metals." },
+    { "id": "black-bay", "maker": "Tudor", "model": "Black Bay", "note": "A robust dive watch with a heritage look, comfortable in weather and on the water." },
+    { "id": "gmt-master-ii", "maker": "Rolex", "model": "GMT-Master II", "note": "A 24-hour hand and bezel for keeping a second time zone in view." },
+    { "id": "calatrava", "maker": "Patek Philippe", "model": "Calatrava", "since": 1932, "note": "The essential round dress watch: slim, quiet and made for evenings." },
+    { "id": "overseas", "maker": "Vacheron Constantin", "model": "Overseas", "note": "A sports watch from one of the oldest continuously operating manufactures, with an easily interchangeable strap system." }
+  ]
+}
