@@ -6,7 +6,7 @@
   "group": "japan",
   "tagline": "Temples at first light, gardens, and the discipline of doing less.",
   "distinctive": "Kyoto's temples, gardens and craft traditions are best met early in the morning and slowly. Its extraordinary architecture ranges from Zen gardens to the Katsura Imperial Villa.",
-  "image": { "scene": "temple", "tone": "dawn", "alt": "Illustration of a pagoda among misty hills at dawn with red maple trees" },
+  "image": { "src": "/images/photos/kyoto.webp", "width": 1600, "height": 1067, "scene": "temple", "tone": "dawn", "alt": "Yasaka Pagoda above a quiet lane of wooden houses in Kyoto", "credit": "Photo: 663highland", "license": "CC BY 2.5", "sourceUrl": "https://commons.wikimedia.org/wiki/File:150124_At_Yasakakamimachi_Kyoto_Japan01n.jpg" },
   "moods": { "sea": 0, "city": 2, "art": 3, "lifetime": 3, "weekend": 0, "wellness": 2, "drive": 0 },
   "moodNotes": {
     "art": "Ryōan-ji's rock garden, the Katsura Imperial Villa and a living tradition of craft.",

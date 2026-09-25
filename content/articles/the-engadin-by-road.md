@@ -10,9 +10,15 @@ status: review
 basis: research
 linkLabel: Drive the Engadin
 hero:
+  src: "/images/photos/engadin.webp"
+  width: 1600
+  height: 1067
   scene: alpine
   tone: dawn
-  alt: Illustration of snow-capped peaks at dawn above a valley road with a dark car climbing a pass
+  alt: "Lake St. Moritz reflecting the peaks of the Engadin"
+  credit: "Photo: Isiwal"
+  license: "CC BY-SA 4.0"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Sankt_Moritz_Lake_Piz_Muragl.jpg"
 sources:
   - title: Julier Pass
     url: https://en.wikipedia.org/wiki/Julier_Pass

@@ -6,7 +6,7 @@
   "group": "italy-venice",
   "tagline": "A city without cars, arrived at by water.",
   "distinctive": "There is no arrival like Venice's: a water taxi across the lagoon to a palazzo landing stage. It is at its best early in the morning and late at night, when the day visitors have gone.",
-  "image": { "scene": "venice", "tone": "dusk", "alt": "Illustration of domes and a bell tower across the lagoon at dusk, with a gondola" },
+  "image": { "src": "/images/photos/venice.webp", "width": 1600, "height": 1062, "scene": "venice", "tone": "dusk", "alt": "Water taxis on the Grand Canal approaching the Rialto Bridge at golden hour", "credit": "Photo: kallerna", "license": "CC BY-SA 4.0", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ponte_di_Rialto_Venice_1.jpg" },
   "moods": { "sea": 1, "city": 2, "art": 3, "lifetime": 3, "weekend": 3, "wellness": 0, "drive": 0 },
   "moodNotes": {
     "art": "Byzantine mosaics, Titian and Tintoretto, the Peggy Guggenheim Collection and the Biennale.",

@@ -10,9 +10,15 @@ status: review
 basis: research
 linkLabel: Choose your shore
 hero:
+  src: "/images/photos/como-villa.webp"
+  width: 1600
+  height: 1071
   scene: interior
   tone: dusk
-  alt: Illustration of a hotel room with a wide window framing a lake and mountains at dusk
+  alt: "Villa del Balbianello on its wooded promontory in Lake Como"
+  credit: "Photo: FAI – Fondo Ambiente Italiano"
+  license: "CC BY-SA 4.0"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Vista_dal_lago_su_Villa_del_Balbianello,_Bene_FAI_sul_Lago_di_Como.jpg"
 sources:
   - title: Lake Como
     url: https://en.wikipedia.org/wiki/Lake_Como

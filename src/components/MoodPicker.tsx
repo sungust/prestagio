@@ -3,7 +3,7 @@
 import type { Mood, MoodId } from "@/lib/planner/types";
 import { track } from "@/lib/analytics";
 import { Artwork } from "./Media";
-import { moodImage } from "@/lib/photos";
+import { resolveImage } from "@/lib/photos";
 import { CheckIcon } from "./Icons";
 
 export function MoodPicker({
@@ -39,13 +39,15 @@ export function MoodPicker({
                 }}
               />
               <span className="media">
-                <Artwork image={moodImage(m.id, m.image)} seed={m.id} sizes="(max-width: 760px) 50vw, 15vw" />
+                <Artwork image={resolveImage(m.image)} seed={m.id} sizes="(max-width: 760px) 50vw, 15vw" />
               </span>
               <span className="mood__check" aria-hidden="true">
                 <CheckIcon />
               </span>
-              <span className="mood__label">{m.label}</span>
-              {large ? <span className="mood__line">{m.line}</span> : null}
+              <span className="mood__text">
+                <span className="mood__label">{m.label}</span>
+                {large ? <span className="mood__line">{m.line}</span> : null}
+              </span>
             </label>
           );
         })}

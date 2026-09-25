@@ -11,9 +11,15 @@ basis: research
 featured: true
 linkLabel: Discover Kyoto
 hero:
+  src: "/images/photos/kyoto.webp"
+  width: 1600
+  height: 1067
   scene: temple
   tone: dawn
-  alt: Illustration of a pagoda among misty hills at dawn with red maple trees in the foreground
+  alt: "Yasaka Pagoda above a quiet lane of wooden houses in Kyoto"
+  credit: "Photo: 663highland"
+  license: "CC BY 2.5"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:150124_At_Yasakakamimachi_Kyoto_Japan01n.jpg"
 sources:
   - title: Historic Monuments of Ancient Kyoto (UNESCO World Heritage List)
     url: https://whc.unesco.org/en/list/688

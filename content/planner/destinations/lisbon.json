@@ -6,11 +6,7 @@
   "group": "portugal",
   "tagline": "Tiled facades, river light, and a coast road waiting just beyond the city.",
   "distinctive": "Lisbon is a city of hills, tile and river light. It is close enough to the Atlantic coast and the palaces of Sintra that one long weekend can hold both.",
-  "image": {
-    "scene": "coast",
-    "tone": "golden",
-    "alt": "Illustration of a hillside city of pale houses above the water in golden evening light"
-  },
+  "image": { "src": "/images/photos/lisbon.webp", "width": 1600, "height": 1067, "scene": "coast", "tone": "golden", "alt": "The rooftops of Alfama in Lisbon, with São Vicente de Fora and the Tagus beyond", "credit": "Photo: Ingo Mehling", "license": "CC BY-SA 4.0", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lissabon_-_Santa_Luzia_-_Alfama_-_2.jpg" },
   "moods": {
     "sea": 2,
     "city": 3,

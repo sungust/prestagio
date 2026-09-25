@@ -6,7 +6,7 @@
   "group": "uk",
   "tagline": "Glens, sea lochs and single-track roads that ask you to slow down.",
   "distinctive": "The western Highlands combine mountains, sea lochs and white-sand beaches, with a light that changes by the minute. The roads are part of the experience and reward patience.",
-  "image": { "scene": "highland", "tone": "dawn", "alt": "Illustration of moorland hills above a sea loch with a car on a winding road" },
+  "image": { "src": "/images/photos/highlands.webp", "width": 1600, "height": 1200, "scene": "highland", "tone": "dawn", "alt": "A car on the empty road through Glen Coe beneath Buachaille Etive Mòr", "credit": "Photo: Kenneth Barker", "license": "CC BY 2.0", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Glen_Coe_highway_and_car.jpg" },
   "moods": { "sea": 1, "city": 0, "art": 0, "lifetime": 2, "weekend": 1, "wellness": 2, "drive": 3 },
   "moodNotes": {
     "drive": "Glencoe, the Road to the Isles and the single-track roads of the west are legendary.",

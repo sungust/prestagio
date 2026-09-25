@@ -11,9 +11,15 @@ basis: research
 featured: true
 linkLabel: Understand the GMT
 hero:
+  src: "/images/photos/time.webp"
+  width: 1600
+  height: 1067
   scene: watch
   tone: night
-  alt: Illustration of a bronze-cased watch with a dark dial and hands at ten past ten, seen from above
+  alt: "A steel wristwatch with a white dial resting on dark wood"
+  credit: "Photo: Pixel.la"
+  license: "CC0"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Fashion-wristwatch-time-watch_(24217032812).jpg"
 sources:
   - title: GMT watch
     url: https://en.wikipedia.org/wiki/GMT_watch

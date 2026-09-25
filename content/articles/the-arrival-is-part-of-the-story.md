@@ -11,9 +11,15 @@ basis: research
 featured: true
 linkLabel: Explore the arrival
 hero:
+  src: "/images/photos/arrival.webp"
+  width: 1600
+  height: 1200
   scene: jet
   tone: golden
-  alt: Illustration of a private jet on the apron at golden hour with a dark saloon car waiting beside it
+  alt: "A dark business jet waiting on a sunlit apron"
+  credit: "Photo: Monaam Ben Fredj"
+  license: "CC BY-SA 4.0"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Euro_Executive_Jet_Dassault_Falcon_900B_01.jpg"
 sources:
   - title: Fixed-base operator
     url: https://en.wikipedia.org/wiki/Fixed-base_operator

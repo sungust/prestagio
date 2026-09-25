@@ -6,7 +6,7 @@
   "group": "italy-south",
   "tagline": "Cliffside villages, lemon terraces and a coast best seen from the sea.",
   "distinctive": "A UNESCO-listed coastline of steep terraces, pastel villages and gardens hung above the sea. It rewards arriving slowly, by boat where possible, and staying long enough to ignore the itinerary.",
-  "image": { "scene": "coast", "tone": "dusk", "alt": "Illustration of a cliffside village above the sea at sunset, with small boats below" },
+  "image": { "src": "/images/photos/amalfi.webp", "width": 1600, "height": 1067, "scene": "coast", "tone": "dusk", "alt": "Positano rising from the sea on the Amalfi Coast at dusk", "credit": "Photo: Thomas Fabian", "license": "CC BY-SA 2.0", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Positano_at_sunset.jpg" },
   "moods": { "sea": 3, "city": 0, "art": 2, "lifetime": 3, "weekend": 1, "wellness": 1, "drive": 0 },
   "moodNotes": {
     "sea": "Days start with a swim from the rocks and end with a boat back along the cliffs.",

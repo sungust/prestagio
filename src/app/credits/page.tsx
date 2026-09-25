@@ -1,26 +1,30 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import { ProsePage } from "@/components/ProsePage";
-import { creditFor } from "@/components/Media";
-import { allArticlesUnfiltered } from "@/lib/content/articles";
-import { articlePath } from "@/lib/content/paths";
-import { isVisible } from "@/lib/content/stage";
+import { ALL_PHOTOS } from "@/lib/photos";
 
 export const metadata: Metadata = { title: "Image Credits", alternates: { canonical: "/credits" } };
 
 export default function CreditsPage() {
-  const articles = allArticlesUnfiltered().filter((a) => isVisible(a.status));
   return (
-    <ProsePage title="Image credits" lede="Every image on Prestagio, and where it comes from.">
+    <ProsePage title="Image credits" lede="Every photograph on Prestagio, who took it, and the licence it is used under.">
       <p>
-        Images marked &ldquo;Image: Prestagio&rdquo; are Prestagio&rsquo;s own design artwork. They are atmospheric, not literal: they do not depict any
-        specific hotel, car, watch or view. Where no photograph is in place yet, Prestagio uses original illustrations created for the site.
+        Prestagio&rsquo;s photographs are freely licensed, most from Wikimedia Commons, and we thank the photographers who share their work. Each
+        photo has been resized and cropped for the site and is otherwise unaltered. Photos under a Creative Commons ShareAlike (BY-SA) licence remain
+        available under that same licence. The photos are atmospheric, not endorsements: unless a caption says so, they do not show the specific hotel,
+        car, watch or fragrance recommended alongside them.
       </p>
-      <ul>
-        {articles.map((a) => (
-          <li key={a.slug}>
-            <Link href={articlePath(a)}>{a.title}</Link>: {creditFor(a.hero)}
-            {a.hero.license ? ` (${a.hero.license})` : ""}
+      <ul className="credits">
+        {ALL_PHOTOS.map((p) => (
+          <li key={p.src}>
+            {p.alt}. Photo: {p.artist},{" "}
+            <a href={p.licenseUrl} rel="license noopener">
+              {p.license}
+            </a>
+            , via{" "}
+            <a href={p.sourceUrl} rel="noopener">
+              Wikimedia Commons
+            </a>
+            .
           </li>
         ))}
       </ul>

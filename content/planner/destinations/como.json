@@ -6,7 +6,7 @@
   "group": "italy",
   "tagline": "Villas, gardens and a rationalist masterpiece, an hour from Milan.",
   "distinctive": "Lake Como pairs the grand villa gardens of its shoreline with something few lake resorts have: Como town's remarkable twentieth-century architecture. Mornings on the water, afternoons in gardens and a car for the hill roads make it complete.",
-  "image": { "scene": "lake", "tone": "golden", "alt": "Illustration of Lake Como seen from a stone terrace, with cypresses and mountains beyond" },
+  "image": { "src": "/images/photos/como-villa.webp", "width": 1600, "height": 1071, "scene": "lake", "tone": "golden", "alt": "Villa del Balbianello on its wooded promontory in Lake Como", "credit": "Photo: FAI – Fondo Ambiente Italiano", "license": "CC BY-SA 4.0", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vista_dal_lago_su_Villa_del_Balbianello,_Bene_FAI_sul_Lago_di_Como.jpg" },
   "moods": { "sea": 2, "city": 0, "art": 3, "lifetime": 2, "weekend": 3, "wellness": 2, "drive": 2 },
   "moodNotes": {
     "sea": "A lake rather than the sea, but mornings are spent on the water and villages are best reached by boat.",

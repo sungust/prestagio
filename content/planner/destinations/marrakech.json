@@ -6,7 +6,7 @@
   "group": "morocco",
   "tagline": "Gardens, palaces and rooftops, with the Atlas on the horizon.",
   "distinctive": "The Medina's palaces and madrasas, Jardin Majorelle and the Yves Saint Laurent museum, the ritual of the hammam, and the High Atlas an hour away.",
-  "image": { "scene": "riad", "tone": "golden", "alt": "Illustration of palm trees and a reflecting pool seen through terracotta arches" },
+  "image": { "src": "/images/photos/marrakech.webp", "width": 1600, "height": 1062, "scene": "riad", "tone": "golden", "alt": "The cobalt-blue villa and cacti of the Jardin Majorelle in Marrakech", "credit": "Photo: Viault", "license": "CC BY-SA 3.0", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Le_jardin_des_majorelle_21.JPG" },
   "moods": { "sea": 0, "city": 3, "art": 3, "lifetime": 2, "weekend": 2, "wellness": 3, "drive": 1 },
   "moodNotes": {
     "city": "Rooftop dinners, lamplit courtyards and the square at Jemaa el-Fnaa after dark.",

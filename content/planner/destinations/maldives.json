@@ -6,7 +6,7 @@
   "group": "indian-ocean",
   "tagline": "A private shore in a UNESCO Biosphere Reserve.",
   "distinctive": "Baa Atoll is a UNESCO Biosphere Reserve, known for its reefs and for the manta rays that gather at Hanifaru Bay in season. It is a place for doing very little, very well.",
-  "image": { "scene": "atoll", "tone": "dusk", "alt": "Illustration of overwater villas on stilts above a calm lagoon at sunset" },
+  "image": { "src": "/images/photos/maldives.webp", "width": 1600, "height": 857, "scene": "atoll", "tone": "dusk", "alt": "A wooden jetty leading to overwater villas above a turquoise lagoon in the Maldives", "credit": "Photo: Martin Falbisoner", "license": "CC BY-SA 4.0", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diamonds_Thudufushi_Beach_and_Water_Villas,_May_2017_-04.jpg" },
   "moods": { "sea": 3, "city": 0, "art": 0, "lifetime": 3, "weekend": 0, "wellness": 3, "drive": 0 },
   "moodNotes": {
     "sea": "Your own stretch of lagoon, reef a few strokes from the steps, and nothing on the horizon.",

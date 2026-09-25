@@ -10,9 +10,15 @@ status: review
 basis: research
 linkLabel: Discover the Amalfi Coast
 hero:
+  src: "/images/photos/amalfi.webp"
+  width: 1600
+  height: 1067
   scene: coast
   tone: dusk
-  alt: Illustration of a cliffside village above the sea at sunset, with small boats below
+  alt: "Positano rising from the sea on the Amalfi Coast at dusk"
+  credit: "Photo: Thomas Fabian"
+  license: "CC BY-SA 2.0"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Positano_at_sunset.jpg"
 sources:
   - title: Costiera Amalfitana (UNESCO World Heritage List)
     url: https://whc.unesco.org/en/list/830

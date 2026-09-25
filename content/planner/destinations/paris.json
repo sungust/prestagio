@@ -6,7 +6,7 @@
   "group": "france-city",
   "tagline": "Collections by day, performances and late tables by night.",
   "distinctive": "Paris does evenings better than almost anywhere, with an opera house, an unhurried late dinner and the river lit up afterwards. By day it has some of the world's great collections, from Orsay to the Pinault Collection in the Bourse de Commerce.",
-  "image": { "scene": "city-night", "tone": "night", "alt": "Illustration of a city's lit skyline reflected in a river at night" },
+  "image": { "src": "/images/photos/citynight.webp", "width": 1600, "height": 1025, "scene": "city-night", "tone": "night", "alt": "The Eiffel Tower and Pont Alexandre III lit up above the Seine at blue hour", "credit": "Photo: Getfunky Paris", "license": "CC BY 2.0", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eiffel_Tower_and_Pont_Alexandre_III_at_night.jpg" },
   "moods": { "sea": 0, "city": 3, "art": 3, "lifetime": 2, "weekend": 3, "wellness": 1, "drive": 0 },
   "moodNotes": {
     "city": "Paris at night: the Palais Garnier, a late table, a walk along the lit Seine.",

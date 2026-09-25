@@ -6,7 +6,7 @@
   "group": "france-coast",
   "tagline": "Three corniches, hilltop villages, and the sea at every turn.",
   "distinctive": "The Riviera between Nice and Monaco combines Belle Époque villas, hilltop villages full of art, and three corniche roads stacked one above the other along the coast.",
-  "image": { "scene": "riviera", "tone": "day", "alt": "Illustration of a Riviera hillside town above a blue sea, with a red convertible on the coast road" },
+  "image": { "src": "/images/photos/riviera.webp", "width": 1600, "height": 1200, "scene": "riviera", "tone": "day", "alt": "The bay of Villefranche-sur-Mer and Cap Ferrat on the French Riviera", "credit": "Photo: Miniwark", "license": "CC BY-SA 4.0", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Villefranche-sur-Mer_P1000931.jpg" },
   "moods": { "sea": 3, "city": 1, "art": 2, "lifetime": 2, "weekend": 3, "wellness": 1, "drive": 3 },
   "moodNotes": {
     "sea": "Swim from the rocks at Cap-Ferrat and lunch at a beach club.",

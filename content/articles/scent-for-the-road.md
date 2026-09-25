@@ -10,9 +10,15 @@ status: review
 basis: research
 linkLabel: Scent the second home on the road
 hero:
+  src: "/images/photos/drive.webp"
+  width: 1600
+  height: 791
   scene: riviera
   tone: day
-  alt: Illustration of a red convertible on a coast road beside a blue sea and a hillside town
+  alt: "A silver Porsche 911 on a country road"
+  credit: "Photo: Ermell"
+  license: "CC BY-SA 4.0"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Porsche_911_Turbo_(Typ_930-3.3)_ADAC_Deutschland_Klassik_2018_6290583.jpg"
 sources:
   - title: Air freshener
     url: https://en.wikipedia.org/wiki/Air_freshener

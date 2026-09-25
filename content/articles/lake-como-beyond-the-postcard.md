@@ -11,9 +11,15 @@ basis: research
 featured: true
 linkLabel: Discover Como
 hero:
+  src: "/images/photos/como.webp"
+  width: 1600
+  height: 1067
   scene: lake
   tone: golden
-  alt: Illustration of Lake Como seen from a balustraded terrace, with cypresses, a lakeside village and mountains beyond
+  alt: "Cypresses and a lawn above Lake Como in the gardens of Villa del Balbianello"
+  credit: "Photo: Phyrexian"
+  license: "CC BY-SA 4.0"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Lenno_-_Villa_del_Balbianello_0617.JPG"
 sources:
   - title: Lake Como
     url: https://en.wikipedia.org/wiki/Lake_Como

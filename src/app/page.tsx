@@ -58,24 +58,17 @@ export default function HomePage() {
   return (
     <>
       <section className="home-hero" aria-labelledby="hero-title">
-        <div className="home-hero__frame">
-          <picture>
-            <source media="(max-width: 700px)" srcSet={PHOTOS.heroCoast.src} />
-            {/* eslint-disable-next-line @next/next/no-img-element -- art-directed hero; the desktop image carries the set headline */}
-            <img src={PHOTOS.hero.src} alt="" width={PHOTOS.hero.width} height={PHOTOS.hero.height} fetchPriority="high" />
-          </picture>
-          <div className="home-hero__copy">
-            <h1 id="hero-title">
-              Go Somewhere
-              <br /> Extraordinary
-            </h1>
-            <p>A journey shaped around where you stay, how you arrive, and everything you take with you.</p>
-            <TrackedLink href="/plan" className="btn home-hero__cta" event="hero_cta_click">
-              <span className="home-hero__cta-text">
-                Design My Escape <Arrow />
-              </span>
-            </TrackedLink>
-          </div>
+        <Image src={PHOTOS.hero.src} alt={PHOTOS.hero.alt} fill priority sizes="100vw" className="home-hero__img" />
+        <div className="home-hero__shade" aria-hidden="true" />
+        <div className="wrap home-hero__copy">
+          <h1 id="hero-title">
+            Go Somewhere
+            <br /> Extraordinary
+          </h1>
+          <p>A journey shaped around where you stay, how you arrive, and everything you take with you.</p>
+          <TrackedLink href="/plan" className="btn" event="hero_cta_click">
+            Design My Escape <Arrow />
+          </TrackedLink>
         </div>
       </section>
 

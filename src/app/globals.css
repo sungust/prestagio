@@ -631,15 +631,21 @@ button:hover .arrow {
   inset: 0;
   background: linear-gradient(180deg, rgba(12, 10, 8, 0) 35%, rgba(12, 10, 8, 0.78) 100%);
 }
-.mood__label {
+.mood__text {
   position: absolute;
   z-index: 1;
   left: 14px;
-  right: 40px;
+  right: 14px;
   bottom: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.mood__label {
   font-family: var(--serif-display);
   font-size: clamp(17px, 1.5vw, 21px);
   line-height: 1.1;
+  padding-right: 26px;
 }
 .mood__check {
   position: absolute;
@@ -679,14 +685,12 @@ button:hover .arrow {
 }
 .moods--large .mood__label {
   font-size: clamp(20px, 2vw, 26px);
-  bottom: 44px;
+  padding-right: 0;
+}
+.moods--large .mood::after {
+  background: linear-gradient(180deg, rgba(12, 10, 8, 0) 18%, rgba(12, 10, 8, 0.55) 48%, rgba(12, 10, 8, 0.86) 100%);
 }
 .mood__line {
-  position: absolute;
-  z-index: 1;
-  left: 14px;
-  right: 14px;
-  bottom: 12px;
   font-size: 12.5px;
   line-height: 1.35;
   opacity: 0.92;
@@ -700,9 +704,6 @@ button:hover .arrow {
   }
   .moods--large .mood__line {
     display: none;
-  }
-  .moods--large .mood__label {
-    bottom: 12px;
   }
 }
 
@@ -2057,123 +2058,59 @@ fieldset {
 
 .home-hero {
   position: relative;
+  isolation: isolate;
   overflow: hidden;
-  max-height: 720px;
+  min-height: clamp(520px, 46vw, 680px);
+  display: flex;
+  align-items: center;
   background: #2b2019;
+  color: #fbf6ee;
 }
-.home-hero__frame {
-  position: relative;
-  aspect-ratio: 2048 / 890;
-}
-.home-hero__frame img {
-  display: block;
-  width: 100%;
-  height: 100%;
+.home-hero__img {
+  z-index: -2;
   object-fit: cover;
+  object-position: 50% 55%;
 }
-/* Desktop: the photograph carries the set headline and button, so the live
-   copy stays available to assistive tech and search, and the link sits
-   exactly over the pictured button. */
-.home-hero__copy h1,
-.home-hero__copy p {
+.home-hero__shade {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
+  inset: 0;
+  z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(20, 14, 10, 0.5) 0%, rgba(20, 14, 10, 0.26) 42%, rgba(20, 14, 10, 0) 70%),
+    linear-gradient(180deg, rgba(20, 14, 10, 0.2) 0%, rgba(20, 14, 10, 0) 35%, rgba(20, 14, 10, 0.3) 100%);
 }
-.home-hero__cta.btn {
-  position: absolute;
-  left: 5.47%;
-  top: 55.5%;
-  width: 19.14%;
-  height: 9.66%;
-  min-height: 0;
-  padding: 0;
-  border: 0;
-  background: transparent;
+.home-hero__copy {
+  padding-block: clamp(56px, 7vw, 96px) clamp(72px, 8vw, 110px);
 }
-.home-hero__cta.btn:hover {
-  background: rgba(255, 255, 255, 0.08);
+.home-hero h1 {
+  font-size: clamp(40px, 5.6vw, 80px);
+  font-weight: 500;
+  line-height: 0.98;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  text-shadow: 0 1px 24px rgba(0, 0, 0, 0.3);
 }
-.home-hero__cta-text {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
+.home-hero p {
+  font-family: var(--serif-text);
+  font-size: clamp(17px, 1.6vw, 21px);
+  line-height: 1.4;
+  max-width: 34ch;
+  margin: 18px 0 30px;
+  text-shadow: 0 1px 14px rgba(0, 0, 0, 0.4);
 }
-
 @media (max-width: 700px) {
-  .home-hero__frame {
-    aspect-ratio: auto;
+  .home-hero {
     min-height: 560px;
+    align-items: flex-start;
   }
-  .home-hero__frame img {
-    position: absolute;
-    inset: 0;
-    object-position: 55% center;
+  .home-hero__img {
+    object-position: 38% 50%;
   }
-  .home-hero__frame::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    z-index: 1;
-    background: linear-gradient(90deg, rgba(255, 243, 220, 0.88) 0%, rgba(255, 243, 220, 0.55) 60%, rgba(255, 243, 220, 0) 100%);
+  .home-hero__shade {
+    background: linear-gradient(180deg, rgba(20, 14, 10, 0.55) 0%, rgba(20, 14, 10, 0.25) 55%, rgba(20, 14, 10, 0.1) 100%);
   }
-  .home-hero__copy {
-    position: relative;
-    z-index: 2;
-    padding: 64px var(--gutter) 90px;
-    color: var(--ink);
-  }
-  .home-hero__copy h1,
-  .home-hero__copy p {
-    position: static;
-    width: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    clip: auto;
-    white-space: normal;
-  }
-  .home-hero__copy h1 {
-    font-size: clamp(34px, 10.4vw, 64px);
-    line-height: 0.96;
-    text-transform: uppercase;
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
-  .home-hero__copy p {
-    font-family: var(--serif-text);
-    font-size: 18px;
-    line-height: 1.4;
-    max-width: 30ch;
-    margin-bottom: 28px;
-  }
-  .home-hero__cta.btn {
-    position: static;
-    width: auto;
-    height: auto;
-    min-height: 48px;
-    padding: 14px 24px;
-    background: var(--bronze);
-    border: 1px solid var(--bronze);
-  }
-  .home-hero__cta.btn:hover {
-    background: var(--bronze-hover);
-  }
-  .home-hero__cta-text {
-    position: static;
-    width: auto;
-    height: auto;
-    overflow: visible;
-    clip: auto;
-    display: inline-flex;
-    gap: 12px;
+  .home-hero h1 {
+    font-size: clamp(34px, 10.4vw, 56px);
   }
 }
 

@@ -11,9 +11,15 @@ basis: research
 featured: true
 linkLabel: Discover room scent
 hero:
+  src: "/images/photos/atmosphere.webp"
+  width: 1600
+  height: 1200
   scene: aroma
   tone: golden
-  alt: Illustration of a glass fragrance bottle with amber liquid on a stone surface in warm light
+  alt: "A glass bottle of fragrance on a pale wooden table"
+  credit: "Photo: Santeri Viinamäki"
+  license: "CC BY-SA 4.0"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Perfume_glass_bottle.jpg"
 sources:
   - title: Perfume (Fragrance notes)
     url: https://en.wikipedia.org/wiki/Perfume#Fragrance_notes

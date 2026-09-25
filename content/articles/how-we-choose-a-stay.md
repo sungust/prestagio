@@ -10,9 +10,15 @@ status: review
 basis: research
 linkLabel: See how we choose
 hero:
+  src: "/images/photos/stay.webp"
+  width: 1600
+  height: 1066
   scene: interior
   tone: golden
-  alt: Illustration of a calm hotel room with a wide window, white linen and a lamp
+  alt: "A breakfast tray on a linen bed, with the sea beyond the window"
+  credit: "Photo: Umani.Hotel"
+  license: "CC BY 4.0"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Hotel_Umani_Double_Room_Sea_view_(9).jpg"
 sources: []
 related: [where-to-stay-on-lake-como, a-private-shore-in-the-maldives]
 affiliates: []

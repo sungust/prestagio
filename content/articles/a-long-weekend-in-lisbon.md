@@ -10,9 +10,15 @@ status: review
 basis: research
 linkLabel: Discover Lisbon
 hero:
+  src: "/images/photos/lisbon.webp"
+  width: 1600
+  height: 1067
   scene: riviera
   tone: golden
-  alt: Illustration of a hillside town above the sea in golden light, with a car on the coast road
+  alt: "The rooftops of Alfama in Lisbon, with São Vicente de Fora and the Tagus beyond"
+  credit: "Photo: Ingo Mehling"
+  license: "CC BY-SA 4.0"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Lissabon_-_Santa_Luzia_-_Alfama_-_2.jpg"
 sources:
   - title: Monastery of the Hieronymites and Tower of Belém (UNESCO)
     url: https://whc.unesco.org/en/list/263

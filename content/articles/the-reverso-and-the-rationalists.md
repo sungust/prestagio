@@ -10,9 +10,15 @@ status: review
 basis: research
 linkLabel: Read the story of the Reverso
 hero:
+  src: "/images/photos/time.webp"
+  width: 1600
+  height: 1067
   scene: architecture
   tone: day
-  alt: Illustration of a pale rationalist facade with a regular grid of deep-set windows under a clear sky
+  alt: "A steel wristwatch with a white dial resting on dark wood"
+  credit: "Photo: Pixel.la"
+  license: "CC0"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Fashion-wristwatch-time-watch_(24217032812).jpg"
 sources:
   - title: Jaeger-LeCoultre Reverso
     url: https://en.wikipedia.org/wiki/Jaeger-LeCoultre_Reverso

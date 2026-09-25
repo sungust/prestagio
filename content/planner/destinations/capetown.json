@@ -6,7 +6,7 @@
   "group": "southern-africa",
   "tagline": "A mountain in the city, two oceans, and vineyards an hour away.",
   "distinctive": "Few cities combine a mountain, two oceans and a great wine region so closely. Chapman's Peak Drive and the road to Cape Point are among the world's most spectacular coastal routes.",
-  "image": { "scene": "cape", "tone": "golden", "alt": "Illustration of a flat-topped mountain above the ocean with a pale car on a coastal road" },
+  "image": { "src": "/images/photos/capetown.webp", "width": 1600, "height": 1027, "scene": "cape", "tone": "golden", "alt": "Table Mountain above the Cape Town city bowl at dawn", "credit": "Photo: Daniel Case", "license": "CC BY-SA 3.0", "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cape_Town_City_Bowl_and_Table_Mountain_at_dawn.jpg" },
   "moods": { "sea": 2, "city": 2, "art": 1, "lifetime": 3, "weekend": 0, "wellness": 1, "drive": 3 },
   "moodNotes": {
     "drive": "Chapman's Peak Drive and the Cape Peninsula loop are some of the most beautiful roads anywhere.",

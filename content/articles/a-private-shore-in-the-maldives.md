@@ -11,9 +11,15 @@ basis: research
 featured: true
 linkLabel: Explore the Maldives
 hero:
+  src: "/images/photos/maldives.webp"
+  width: 1600
+  height: 857
   scene: atoll
   tone: dusk
-  alt: Illustration of thatched overwater villas on stilts above a calm lagoon at sunset
+  alt: "A wooden jetty leading to overwater villas above a turquoise lagoon in the Maldives"
+  credit: "Photo: Martin Falbisoner"
+  license: "CC BY-SA 4.0"
+  sourceUrl: "https://commons.wikimedia.org/wiki/File:Diamonds_Thudufushi_Beach_and_Water_Villas,_May_2017_-04.jpg"
 sources:
   - title: Baa Atoll
     url: https://en.wikipedia.org/wiki/Baa_Atoll
