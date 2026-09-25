@@ -1,7 +1,17 @@
 import type { NextConfig } from "next";
 
+/**
+ * Deployment stage, fixed at build time so it is identical in static pages and
+ * serverless functions on any host: Vercel (VERCEL_ENV) or Netlify (CONTEXT).
+ * An explicit CONTENT_STAGE always wins.
+ */
+const deployStage =
+  process.env.CONTENT_STAGE ||
+  (process.env.VERCEL_ENV === "production" || process.env.CONTEXT === "production" ? "production" : "preview");
+
 const nextConfig: NextConfig = {
   poweredByHeader: false,
+  env: { DEPLOY_STAGE: deployStage },
   images: {
     formats: ["image/avif", "image/webp"],
     // Add licensed photo hosts here when real photography is supplied.

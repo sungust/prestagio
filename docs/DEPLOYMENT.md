@@ -1,6 +1,17 @@
-# Deployment (Vercel) and rollback
+# Deployment (Netlify or Vercel) and rollback
 
 **Do not change prestagio.com DNS until the preview has been reviewed.**
+
+## Netlify
+
+1. Netlify → **Add new site → Import an existing project → GitHub →** `sungust/prestagio`.
+2. Branch to deploy: `claude/amazing-darwin-salc5c` (or `main` once it exists). Base directory: empty. `netlify.toml` supplies the build command (`npm run build`), the publish directory (`.next`) and Node 22. Netlify's Next.js runtime is installed automatically.
+3. Environment variables (Site configuration → Environment variables): `NEXT_PUBLIC_SITE_URL=https://prestagio.com`. Optional keys are the same as the Vercel table below; set them for **Builds and Functions** scopes.
+4. The publication gate reads Netlify's `CONTEXT` at build time. Production deploys show only `published` content and allow indexing. Deploy previews and branch deploys also show `review` content and are `noindex`.
+5. Domains: Site configuration → **Domain management** → add `prestagio.com` (primary) and `www`. Record the existing DNS first (see Rollback).
+6. Rollback: Deploys → pick a previous deploy → **Publish deploy**.
+
+## Vercel
 
 ## 1. Connect the repository
 
@@ -21,7 +32,7 @@
 
 Without these, every feature degrades gracefully: email and contact explain they are unavailable and offer a link or `mailto:` instead, analytics is a no-op, and the CMS login returns 503.
 
-`VERCEL_ENV` is set by Vercel. Production shows only `published` content. Previews also show `review` content and are `noindex` (robots.txt disallows everything on previews).
+`VERCEL_ENV` (Vercel) or `CONTEXT` (Netlify) is read at build time. Production shows only `published` content. Previews also show `review` content and are `noindex` (robots.txt disallows everything on previews).
 
 ## 3. Review the preview
 
