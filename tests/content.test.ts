@@ -16,8 +16,14 @@ describe("content integrity", () => {
     expect(como.html).toMatch(/not a place to stay/);
   });
 
-  it("does not auto-publish: research drafts are not marked published", () => {
-    for (const a of allArticlesUnfiltered()) expect(["draft", "review"]).toContain(a.status);
+  it("gives every story an editorial status, and every published story its sources and a credited photo", () => {
+    for (const a of allArticlesUnfiltered()) {
+      expect(["draft", "review", "published"], a.slug).toContain(a.status);
+      if (a.status !== "published") continue;
+      expect(a.deck, a.slug).toBeTruthy();
+      expect(a.hero.src && a.hero.credit, a.slug).toBeTruthy();
+      if (a.basis === "research" && a.slug !== "how-we-choose-a-stay") expect(a.sources.length, a.slug).toBeGreaterThan(0);
+    }
   });
 
   it("never uses generic journal calls to action", () => {

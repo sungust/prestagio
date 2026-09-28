@@ -21,9 +21,6 @@ hero:
   license: "CC0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Fashion-wristwatch-time-watch_(24217032812).jpg"
 sources:
-  - title: GMT watch
-    url: https://en.wikipedia.org/wiki/GMT_watch
-    publisher: Wikipedia
   - title: Rolex GMT Master II
     url: https://en.wikipedia.org/wiki/Rolex_GMT_Master_II
     publisher: Wikipedia

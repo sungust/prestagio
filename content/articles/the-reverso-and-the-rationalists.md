@@ -20,8 +20,8 @@ hero:
   license: "CC0"
   sourceUrl: "https://commons.wikimedia.org/wiki/File:Fashion-wristwatch-time-watch_(24217032812).jpg"
 sources:
-  - title: Jaeger-LeCoultre Reverso
-    url: https://en.wikipedia.org/wiki/Jaeger-LeCoultre_Reverso
+  - title: "Jaeger-LeCoultre: the Reverso"
+    url: https://en.wikipedia.org/wiki/Jaeger-LeCoultre#Reverso
     publisher: Wikipedia
   - title: Casa del Fascio (Como)
     url: https://en.wikipedia.org/wiki/Casa_del_Fascio_(Como)
